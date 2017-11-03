@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,600|Press+Start+2P');
+
+html, body {
+  background:#000;
+  overflow:hidden;  
+}
+
+.data {
+  position:relative;
+  z-index:1;
+  text-align:center;
+  background:RGBA(20,20,20, .99);
+  padding:15px;
+  width:350px;
+  margin:auto;
+  font-family:Montserrat;
+  font-weight:200;
+  color:#AAA;
+}
+
+h1, h2, .ghost {
+  font-family:Montserrat;
+  font-weight:600;  
+  margin:0;
+}
+  
+h1 {
+  font-size:64px;
+  color:#444;
+}
+
+h2 {
+  font-size:24px;
+  color:#888;
+}
+
+.ghost {
+  font-weight:400;
+  font-size:15px;
+  color:#CCC;
+  display:inline-block;
+  margin:8px 2px;
+  padding:8px;
+  border:1px solid #CCC;
+  text-decoration:none;
+}
+
+a.ghost:hover {
+  -webkit-transition:all .5s linear;
+  transition:all .5s linear;
+  background:rgba(50,50,50, .2);
+  border-color:#f2ea00;
+  color:#f2ea00;
+}
+
+#tree {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+}
+
+.folder {
+  position:absolute;
+}
+
+.folder:hover {
+  -webkit-filter:hue-rotate(120deg);
+          filter:hue-rotate(120deg);
+}
+
+#panel {
+  font-family:'Press Start 2P';
+  font-size:24px;
+  text-shadow:0 0 10px #111;
+  background:#111;
+  padding:12px;
+  position:fixed;
+  bottom:50px;
+  text-align:center;
+  width:100vw;
+  z-index:2;
+  color:#AAA;
+  opacity:0;
+  -webkit-transition:all .25s linear;
+  transition:all .25s linear;  
+}
+
+#panel.turnon {
+  opacity:1;
+}
