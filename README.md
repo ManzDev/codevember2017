@@ -4,12 +4,14 @@
 
 Here, my 30 creative experiments:
 
-| Day | Theme | CodePen link | GitHub link | Tecnologies used | Music by |
-|-----|-------|--------------|-------------|------------------|----------|
-| **Day 1** | 🌌 Galaxy | [Galaxy](https://codepen.io/manz/pen/KypYmz) | [Day 1](https://manzdev.github.io/codevember2017/day-1/) | HTML5, CSS3, JS, Canvas | 🎵 [Crig](https://soundcloud.com/crig-1) |
-| **Day 2** | 🎂 Cake | [Cake](https://codepen.io/manz/pen/vWNrdE) | [Day 2](https://manzdev.github.io/codevember2017/day-2/) | HTML5, CSS3, SVG | 🎵 [Michael Aker](https://soundcloud.com/michael-manotas)  |
-| **Day 3** | 🌲 Tree | [Tree](https://codepen.io/manz/pen/bYEvoL) | [Day 3](https://manzdev.github.io/codevember2017/day-3/) | HTML5, CSS3, JS | 🎵 [Finn Formiga](https://soundcloud.com/finn-formiga) |
-| **Day 4** | 💎 Sapphire | [Sapphire](https://codepen.io/manz/pen/zPqvmg) | [Day 3](https://manzdev.github.io/codevember2017/day-4/) | HTML5, CSS3, Animate.css, JS, ThreeJS | 🎵 [WillRock/DaMonz](http://mirrorimage.ocremix.org/) |
+| Day | Theme | CodePen link | GitHub link | Tecnologies used* | Music by |
+|-----|-------|--------------|-------------|-------------------|----------|
+| **Day 1** | 🌌 Galaxy | [Galaxy](https://codepen.io/manz/pen/KypYmz) | [Day 1](https://manzdev.github.io/codevember2017/day-1/) | JS, Canvas | 🎵 [Crig](https://soundcloud.com/crig-1) |
+| **Day 2** | 🎂 Cake | [Cake](https://codepen.io/manz/pen/vWNrdE) | [Day 2](https://manzdev.github.io/codevember2017/day-2/) | SVG | 🎵 [Michael Aker](https://soundcloud.com/michael-manotas)  |
+| **Day 3** | 🌲 Tree | [Tree](https://codepen.io/manz/pen/bYEvoL) | [Day 3](https://manzdev.github.io/codevember2017/day-3/) | JS | 🎵 [Finn Formiga](https://soundcloud.com/finn-formiga) |
+| **Day 4** | 💎 Sapphire | [Sapphire](https://codepen.io/manz/pen/zPqvmg) | [Day 3](https://manzdev.github.io/codevember2017/day-4/) | Animate.css, JS, ThreeJS | 🎵 [WillRock/DaMonz](http://mirrorimage.ocremix.org/) |
+
+<small>* HTML5 and CSS3 always used</small>
 
 # Author
 
