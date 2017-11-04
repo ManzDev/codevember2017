@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+html {
+  background:#111;
+}
+
+body {
+  margin:0;
+  overflow:hidden;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+}
+
+.data {
+  position:relative;
+  z-index:1;
+  text-align:center;
+  font-family:Montserrat;
+  font-weight:200;
+  color:#666;  
+}
+
+h1, h2, .ghost {
+  font-family:Montserrat;
+  font-weight:600;  
+  margin:0;
+}
+  
+h1 {
+  font-size:64px;
+  color:#444;
+}
+
+h2 {
+  font-size:24px;
+  color:#888;
+}
+
+.ghost {
+  font-weight:400;
+  font-size:15px;
+  color:#CCC;
+  display:inline-block;
+  margin:2px;
+  padding:8px;
+  border:1px solid #CCC;
+  text-decoration:none;
+}
+
+a.ghost:hover {
+  -webkit-transition:all .5s ease-in-out;
+  transition:all .5s ease-in-out;
+  background:rgba(0,0,150, 0);
+  border-color:#9999FF;
+  color:#9999FF;
+}
+
+#screen {
+  width:100vw;
+  height:128px;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-pack:distribute;
+      justify-content:space-around;
+}
+
+.sprite {
+  width:128px;
+  height:128px;
+}
+
+.top {
+  opacity:0;
+  -webkit-transition:all .5 linear 0;
+  transition:all .5 linear 0;
+}
+
+#topscreen {
+  margin-top:2em;
+  width:100vw;
+  height:172px;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-pack:distribute;
+      justify-content:space-around;
+}
+
+.top.on {
+  opacity:1;
+}
+
+.chest:hover {
+  -webkit-transition:all .5s ease-in-out;
+  transition:all .5s ease-in-out;
+  -webkit-animation:hover .25s ease infinite alternate;
+          animation:hover .25s ease infinite alternate;
+}
+
+.lost {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background: #000;
+  mix-blend-mode: saturation;
+}
+
+.lost::after {
+  content: "YOU LOST";
+  font-family:Montserrat;
+  font-weight:800;
+  position: relative;
+  top: 30vh;
+  text-align: center;
+  display: block;
+  font-size: 122px;
+  color: #FFF;  
+}
