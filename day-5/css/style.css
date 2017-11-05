@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Press+Start+2P');
+
+html, body {
+  background:#111;
+  overflow:hidden;
+}
+
+.data {
+  position:relative;
+  z-index:1;
+  background:RGBA(30,30,30, .25);
+  width:290px;
+  padding:20px;
+  margin:auto;
+  text-align:center;  
+}
+
+h1, h2, .ghost {
+  font-family:Montserrat;
+  font-weight:600;  
+  margin:0;
+}
+  
+h1 {
+  font-size:64px;
+  color:#444;
+}
+
+h2 {
+  font-size:24px;
+  color:#888;
+}
+
+.ghost {
+  font-weight:400;
+  font-size:15px;
+  color:#CCC;
+  display:inline-block;
+  margin:8px 2px;
+  padding:8px;
+  border:1px solid #CCC;
+  text-decoration:none;
+}
+
+a.ghost:hover {
+  -webkit-transition:all .5s linear;
+  transition:all .5s linear;
+  background:rgba(50,50,50, .2);
+  border-color:#f2ea00;
+  color:#f2ea00;
+}
+
+#screen {
+  width:100vw;
+  height:95vh;
+  position:absolute;
+  top:0;
+  left:0;
+  overflow:hidden;
+  background:#000;
+  box-shadow:0 0 15px 8px #333;
+}
+
+#hud {
+  position:absolute;
+  top:15px;
+  left:15px;
+  width:200px;
+  height:20px;
+  background:yellow;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  border:2px solid #827a09;
+}
+
+#power, #extrapower, #text {
+  width:0;
+  background:darkred;
+  height:100%;
+}
+
+#extrapower {
+  background:red;  
+}
+
+#text {
+  background:transparent;
+  font-size:12px;
+  font-family:'Press Start 2P';
+  color:#FFF;
+  text-align:center;
+  width:125px;
+  height:20px;
+  position:absolute;
+  top:50px;
+  left:25px;
+  line-height: 180%;  
+}
+
+#sword {
+  position:relative;
+  top:calc(100% - 150px);  
+  display:block;
+  width:256px;
+  margin:auto;
+  -webkit-filter:drop-shadow(0 0 200px #137edb);
+          filter:drop-shadow(0 0 200px #137edb);
+  z-index:10; 
+  -webkit-user-select:none; 
+     -moz-user-select:none; 
+      -ms-user-select:none; 
+          user-select:none;
+}
+
+#screen #sword.up {
+  -webkit-animation:swordup 2s ease-in-out forwards;
+          animation:swordup 2s ease-in-out forwards;
+  pointer-events:none;
+}
+
+#sword:hover {
+  -webkit-animation:swordtry .5s linear infinite;
+          animation:swordtry .5s linear infinite;
+}
+
+#sword.try:hover {
+  -webkit-animation:swordtry2 .5s linear infinite;
+          animation:swordtry2 .5s linear infinite;
+}
+
+@-webkit-keyframes swordup {
+  50% {
+    -webkit-transform:translateY(-125px) rotate(0);
+            transform:translateY(-125px) rotate(0);    
+  }
+  100% {
+    -webkit-filter:drop-shadow(0 0 35px #137edb);
+            filter:drop-shadow(0 0 35px #137edb);
+    -webkit-transform:translateY(-175px) rotate(180deg);
+            transform:translateY(-175px) rotate(180deg); 
+  }
+}
+
+@keyframes swordup {
+  50% {
+    -webkit-transform:translateY(-125px) rotate(0);
+            transform:translateY(-125px) rotate(0);    
+  }
+  100% {
+    -webkit-filter:drop-shadow(0 0 35px #137edb);
+            filter:drop-shadow(0 0 35px #137edb);
+    -webkit-transform:translateY(-175px) rotate(180deg);
+            transform:translateY(-175px) rotate(180deg); 
+  }
+}
+
+@-webkit-keyframes swordtry {
+  0%, 49% { -webkit-transform: translateY(0); transform: translateY(0) }
+  50% { -webkit-transform: translateY(-3px); transform: translateY(-3px) }  
+}
+
+@keyframes swordtry {
+  0%, 49% { -webkit-transform: translateY(0); transform: translateY(0) }
+  50% { -webkit-transform: translateY(-3px); transform: translateY(-3px) }  
+}
+
+@-webkit-keyframes swordtry2 {
+  0%, 49% { -webkit-transform: translateY(0); transform: translateY(0) }
+  50% { -webkit-transform: translateY(-25px); transform: translateY(-25px) }  
+}
+
+@keyframes swordtry2 {
+  0%, 49% { -webkit-transform: translateY(0); transform: translateY(0) }
+  50% { -webkit-transform: translateY(-25px); transform: translateY(-25px) }  
+}
+
+#screen #sword.move {
+  -webkit-animation: move 5s ease-in-out infinite alternate;
+          animation: move 5s ease-in-out infinite alternate;
+  -webkit-filter:drop-shadow(0 0 35px #137edb);
+          filter:drop-shadow(0 0 35px #137edb);
+}
+
+@-webkit-keyframes move {
+  0% { -webkit-transform: translateY(-175px) rotate(180deg); transform: translateY(-175px) rotate(180deg) }
+  50% { -webkit-transform: translateY(-250px) rotate(180deg); transform: translateY(-250px) rotate(180deg) }
+  100% { -webkit-transform: translateY(-150px) rotate(180deg); transform: translateY(-150px) rotate(180deg) }
+}
+
+@keyframes move {
+  0% { -webkit-transform: translateY(-175px) rotate(180deg); transform: translateY(-175px) rotate(180deg) }
+  50% { -webkit-transform: translateY(-250px) rotate(180deg); transform: translateY(-250px) rotate(180deg) }
+  100% { -webkit-transform: translateY(-150px) rotate(180deg); transform: translateY(-150px) rotate(180deg) }
+}
