@@ -1,4 +1,4 @@
-# Codevember 2017
+![Codevember 2017](codevember-logo.gif)
 
 30 days, 30 creative experiments. [Codevember](http://codevember.xyz/) is a challenge for developers creating a creative sketch by day during the whole month of November.
 
