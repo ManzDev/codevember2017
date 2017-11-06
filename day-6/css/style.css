@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Shadows+Into+Light');
+
+html {
+  background:#050505;
+  overflow:hidden;
+}
+
+.data {
+  position:relative;
+  z-index:1;
+  text-align:center;
+  width:275px;
+  margin-left:auto;
+  margin-right:2em;
+  z-index:8;
+}
+
+h1, h2, .ghost {
+  font-family:Montserrat;
+  font-weight:600;  
+  margin:0;
+}
+  
+h1 {
+  font-size:64px;
+  color:#444;
+}
+
+h2 {
+  font-size:24px;
+  color:#888;
+}
+
+.ghost {
+  font-weight:400;
+  font-size:15px;
+  color:#CCC;
+  display:inline-block;
+  margin:6px 2px;
+  padding:8px;
+  border:1px solid #CCC;
+  text-decoration:none;
+}
+
+a.ghost:hover {
+  -webkit-transition:all .5s linear;
+  transition:all .5s linear;
+  background:rgba(50,50,50, .2);
+  border-color:#10b0e5;
+  color:#10b0e5;
+}
+
+#tasks {
+  position:absolute;
+  top:50px;
+  left:100px;
+  width:290px;
+  height:400px;
+  background:#e0db8f;
+  color:#222;
+  font-family:'Shadows into light';
+  font-size:32px;
+  padding:25px;
+  z-index:10;
+}
+
+#tasks h2 {
+  color:#000;
+  text-align:center;
+  margin:0 0 1em 0;
+}
+
+#tasks label {
+  display:block;
+}
+
+.mgc-switch {
+  position:relative;
+  top:3px;
+}
+
+#screen {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  z-index:10;
+  pointer-events:none;
+}
+
+#cloud {
+  width:180px;
+  height:100px;
+  margin:auto;
+  display:block;
+  position:relative;
+  z-index:5;
+}
+
+#cloud path {
+  fill:#FFF;
+  -webkit-transition:all 1s ease-in-out;
+  transition:all 1s ease-in-out;  
+}
+
+#cloud.dark path { fill:#666 }
+#cloud.verydark path { fill:#222 }
+
+#rain {
+  width:175px;
+  left:calc(50% - (175px/2));
+  top:180px;
+  position:absolute;
+  z-index:1;
+}
+
+#god {
+  position:relative;
+  top:12px;
+  width:128px;
+  margin:auto;
+  display:block;
+  height:128px;
+  opacity:0;
+  -webkit-transition:all 2s ease-in-out;
+  transition:all 2s ease-in-out;  
+}
+
+.float {
+  -webkit-animation:float 1s ease-in-out infinite alternate;
+          animation:float 1s ease-in-out infinite alternate;  
+}
+
+#god.appear {
+  opacity:1;
+}
+
+#man {
+  width:256px;
+  height:256px;
+  margin:auto;
+  display:block;
+  position:relative;
+  /*top:116px;*/
+  bottom:0;
+  left:10px;
+}
+
+@-webkit-keyframes float {
+  0% { -webkit-transform: translateY(-5px); transform: translateY(-5px) }
+  100% { -webkit-transform: translateY(5px); transform: translateY(5px) }  
+}
+
+@keyframes float {
+  0% { -webkit-transform: translateY(-5px); transform: translateY(-5px) }
+  100% { -webkit-transform: translateY(5px); transform: translateY(5px) }  
+}
+
+.off {
+  display:none
+}
