@@ -12,7 +12,7 @@ Here, my 30 creative experiments:
 | **Day 4** | 💎 Sapphire | [link](https://codepen.io/manz/pen/zPqvmg) | [link](https://manzdev.github.io/codevember2017/day-4/) | Animate.css, JS, ThreeJS | 🎵 [WillRock/DaMonz](http://mirrorimage.ocremix.org/) |
 | **Day 5** | 🗡 Sword | [link](https://codepen.io/manz/pen/wPGQjq) | [link](https://manzdev.github.io/codevember2017/day-5/) | JS, Howler.js, IziToast.js | 🎵 [Demoscene TimeMachine](https://soundcloud.com/demoscenetimemachine/power-up) |
 | **Day 6** | ⛈️ Storm | [link](https://codepen.io/manz/full/WXxxZE) | [link](https://manzdev.github.io/codevember2017/day-6/) | MagicInput, JS, Canvas, Howler.js | 🎵 [Hirokazu Tanaka](https://www.youtube.com/watch?v=TpbTnufHqnI) |
-| **Day 7** | Pillow | [link](https://codepen.io/manz/full/YEWmGG/) | [link](https://manzdev.github.io/codevember2017/day-7/) | SVG, Howler.js | 🎵 [Coma](https://soundcloud.com/scene_music/skogens-djur-014) |
+| **Day 7** | 🛏️ Pillow | [link](https://codepen.io/manz/full/YEWmGG/) | [link](https://manzdev.github.io/codevember2017/day-7/) | SVG, Howler.js | 🎵 [Coma](https://soundcloud.com/scene_music/skogens-djur-014) |
 
 <small>* HTML5 and CSS3 always used</small>
 
