@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+@font-face {
+  font-family: 'Tron';
+  src: url('https://rawgit.com/ManzDev/codevember2017/master/assets/tron.woff'),
+       url('https://rawgit.com/ManzDev/codevember2017/master/assets/tron.ttf');
+}
+
+html {
+  background:#000;
+  overflow:hidden;
+}
+
+.data {
+  position:relative;
+  z-index:1;
+  text-align:center;
+  opacity:0;
+  -webkit-animation:appears 5s ease-in-out 15s forwards;
+          animation:appears 5s ease-in-out 15s forwards;  
+}
+
+h1, h2, .ghost {
+  font-family:Montserrat;
+  font-weight:600;  
+  margin:0;
+}
+  
+h1 {
+  font-size:64px;
+  color:#444;
+}
+
+h1 span {
+  opacity:0;
+  -webkit-animation:appears 2s linear 20s forwards;
+          animation:appears 2s linear 20s forwards;
+}
+
+h2 {
+  font-size:24px;
+  color:#888;
+}
+
+.ghost {
+  background:RGBA(0,0,0, .75);
+  font-weight:400;
+  font-size:15px;
+  color:#CCC;
+  display:inline-block;
+  margin:8px 2px;
+  padding:8px;
+  border:1px solid #CCC;
+  text-decoration:none;
+}
+
+a.ghost:hover {
+  -webkit-transition: all .5s linear;
+  transition:all .5s linear;
+  background:#000;
+  border-color:yellow;
+  color:yellow;
+}
+
+/*******/
+
+#screen {
+  -webkit-perspective:500px;
+          perspective:500px;
+  background:-webkit-linear-gradient(top, transparent, #001616);
+  background:linear-gradient(to bottom, transparent, #001616); 
+  position:absolute;
+  top:0;
+  left:-50%;  
+}
+
+#canvas {
+  -webkit-animation:canvasspin 10s ease forwards,
+            moveback 10s ease forwards 10s;
+          animation:canvasspin 10s ease forwards,
+            moveback 10s ease forwards 10s;
+}
+
+@-webkit-keyframes canvasspin {
+  0% {
+    -webkit-transform: rotateX(40deg) translateY(100px);
+            transform: rotateX(40deg) translateY(100px);
+  }
+  100% {
+    -webkit-transform: rotateX(61deg) translateY(100px);
+            transform: rotateX(61deg) translateY(100px);
+  }
+}
+
+@keyframes canvasspin {
+  0% {
+    -webkit-transform: rotateX(40deg) translateY(100px);
+            transform: rotateX(40deg) translateY(100px);
+  }
+  100% {
+    -webkit-transform: rotateX(61deg) translateY(100px);
+            transform: rotateX(61deg) translateY(100px);
+  }
+}
+
+@-webkit-keyframes moveback {
+  0% {
+    -webkit-transform: rotateX(61deg) translateY(100px);
+            transform: rotateX(61deg) translateY(100px);
+  }
+  100% {
+    -webkit-transform: rotateX(61deg) translateY(0);
+            transform: rotateX(61deg) translateY(0);
+  }
+}
+
+@keyframes moveback {
+  0% {
+    -webkit-transform: rotateX(61deg) translateY(100px);
+            transform: rotateX(61deg) translateY(100px);
+  }
+  100% {
+    -webkit-transform: rotateX(61deg) translateY(0);
+            transform: rotateX(61deg) translateY(0);
+  }
+}
+
+#logo {
+  text-align:center;
+  font-family:Tron;
+  font-size:72px;  
+  color:#FFF;
+  -webkit-filter:drop-shadow(0 0 5px #16abaf);
+          filter:drop-shadow(0 0 5px #16abaf);
+}
+
+@-webkit-keyframes appears {
+  0% { opacity:0 }
+  100% { opacity:1 }
+}
+
+@keyframes appears {
+  0% { opacity:0 }
+  100% { opacity:1 }
+}
+
+.cyclotron {
+  width:3200px;
+  height:120px;
+  border-top-right-radius: 120px 60px;  
+  position:absolute;
+  bottom:100px;
+  left:-3200px;
+  -webkit-animation:speed .5s linear 25s forwards;
+          animation:speed .5s linear 25s forwards;
+}
+
+.blue.cyclotron {
+  background: -webkit-linear-gradient(left, rgba(0, 100, 153, 0.75) 90%, #FFF 95%, #fff0 100%);
+  background: linear-gradient(to right, rgba(0, 100, 153, 0.75) 90%, #FFF 95%, #fff0 100%);
+  z-index:1;
+}
+
+.yellow.cyclotron {
+  background: -webkit-linear-gradient(left, rgba(154, 75, 0, 0.75) 90%, #FFF 95%, #fff0 100%);
+  background: linear-gradient(to right, rgba(154, 75, 0, 0.75) 90%, #FFF 95%, #fff0 100%);
+  bottom: 163px;
+  z-index: 0;
+  -webkit-transform:translateX(-200px);
+          transform:translateX(-200px);
+}
+
+@-webkit-keyframes speed {
+  0% { left:-3200px }
+  100% { left:600px }
+}
+
+@keyframes speed {
+  0% { left:-3200px }
+  100% { left:600px }
+}
