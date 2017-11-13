@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Press+Start+2P');
 
 @font-face {
   font-family: 'Tron';
@@ -145,25 +145,25 @@ a.ghost:hover {
 }
 
 .cyclotron {
-  width:3200px;
+  width:5500px;
   height:120px;
   border-top-right-radius: 120px 60px;  
   position:absolute;
   bottom:100px;
-  left:-3200px;
+  left:-5500px;
   -webkit-animation:speed .5s linear 25s forwards;
           animation:speed .5s linear 25s forwards;
 }
 
 .blue.cyclotron {
-  background: -webkit-linear-gradient(left, rgba(0, 100, 153, 0.75) 90%, #FFF 95%, #fff0 100%);
-  background: linear-gradient(to right, rgba(0, 100, 153, 0.75) 90%, #FFF 95%, #fff0 100%);
+  background: -webkit-linear-gradient(left, rgba(0, 100, 153, 0.75) 90%, #FFF 95%, RGBA(255,255,255, 0) 100%);
+  background: linear-gradient(to right, rgba(0, 100, 153, 0.75) 90%, #FFF 95%, RGBA(255,255,255, 0) 100%);
   z-index:1;
 }
 
 .yellow.cyclotron {
-  background: -webkit-linear-gradient(left, rgba(154, 75, 0, 0.75) 90%, #FFF 95%, #fff0 100%);
-  background: linear-gradient(to right, rgba(154, 75, 0, 0.75) 90%, #FFF 95%, #fff0 100%);
+  background: -webkit-linear-gradient(left, rgba(154, 75, 0, 0.75) 90%, #FFF 95%, RGBA(255,255,255, 0) 100%);
+  background: linear-gradient(to right, rgba(154, 75, 0, 0.75) 90%, #FFF 95%, RGBA(255,255,255, 0) 100%);
   bottom: 163px;
   z-index: 0;
   -webkit-transform:translateX(-200px);
@@ -171,11 +171,35 @@ a.ghost:hover {
 }
 
 @-webkit-keyframes speed {
-  0% { left:-3200px }
-  100% { left:600px }
+  0% { left:-5500px }
+  100% { left:-2000px }
 }
 
 @keyframes speed {
-  0% { left:-3200px }
-  100% { left:600px }
+  0% { left:-5500px }
+  100% { left:-2000px }
+}
+
+.start {
+  position:absolute;
+  width:100%;
+  text-align:center;
+  bottom:145px;
+  font-family:'Press Start 2P';
+  font-size:42px;
+  color:#FFF;
+  z-index:5;
+  -webkit-animation:blink 2s linear infinite 25s;
+          animation:blink 2s linear infinite 25s;
+  opacity:0;
+}
+
+@-webkit-keyframes blink {
+  0%, 49% { opacity:0 }
+  50%, 100% { opacity:1 }
+}
+
+@keyframes blink {
+  0%, 49% { opacity:0 }
+  50%, 100% { opacity:1 }
 }
