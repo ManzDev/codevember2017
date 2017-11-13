@@ -17,6 +17,7 @@ Here, my 30 creative experiments:
 | **Day 9** | 🍟 French Fries | [link](https://codepen.io/manz/pen/eeBPaz) | [link](https://manzdev.github.io/codevember2017/day-9/) | Howler.js, Animation CSS | 🎵 [Razor 1911](https://soundcloud.com/dailychiptune/razor1911-starcraft-2-wings-of-liberty-crack) |
 | **Day 10** | 🚀 Rocket | [link](https://codepen.io/manz/pen/vWgrwp) | [link](https://manzdev.github.io/codevember2017/day-10/) | Howler.js, Canvas, JS | 🎵 [We Are Carnival](https://www.youtube.com/watch?v=87U-eKOAmyQ) |
 | **Day 11** | 🚲 Bike | [link](https://codepen.io/manz/pen/NwjPJd) | [link](https://manzdev.github.io/codevember2017/day-11/) | Howler.js, Canvas, JS | 🎵 [McKlain](https://soundcloud.com/mcklain/the-grid-amstrad) |
+| **Day 12** | 🦓 Zebra | [link](https://codepen.io/manz/pen/LOyrMp/) | [link](https://manzdev.github.io/codevember2017/day-12/) | Howler.js, JS, Animation CSS | 🎵 [PaperLaur](https://soundcloud.com/paperlaur/hello-happier-times) |
 
 <small>* HTML5 and CSS3 always used</small>
 

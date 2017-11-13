@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+html {
+  background:#000;
+  overflow:hidden;
+}
+
+.data {
+  position:relative;
+  z-index:1;
+  text-align:center;  
+}
+
+h1, h2, .ghost {
+  font-family:Montserrat;
+  font-weight:600;  
+  margin:0;
+}
+  
+h1 {
+  font-size:64px;
+  color:#444;
+}
+
+h2 {
+  font-size:24px;
+  color:#888;
+}
+
+.ghost {
+  font-weight:400;
+  font-size:15px;
+  color:#CCC;
+  display:inline-block;
+  margin:8px 2px;
+  padding:8px;
+  border:1px solid #CCC;
+  text-decoration:none;
+}
+
+a.ghost:hover {
+  -webkit-transition:all .5s linear;
+  transition:all .5s linear;
+  background:rgba(50,50,50, .2);
+  border-color:#f2ea00;
+  color:#f2ea00;
+}
+
+#screen {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+}
+
+/*******/
+
+.paso {
+  width:1024px;
+  margin:auto;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-perspective:700px;
+          perspective:700px;
+}
+
+.paso .zebra {
+  width:50px;
+  height:300px;
+  -webkit-transform:translateY(235px) rotateX(80deg);
+          transform:translateY(235px) rotateX(80deg);
+  -webkit-transition:background .1s ease,
+             -webkit-transform 0 linear;
+  transition:background .1s ease,
+             -webkit-transform 0 linear;
+  transition:transform 0 linear,
+             background .1s ease;
+  transition:transform 0 linear,
+             background .1s ease,
+             -webkit-transform 0 linear;
+}
+
+.paso .zebra.b {
+  background:#FFF;
+}
+
+.paso .zebra.n {
+  background:transparent;
+}
+
+.paso .zebra.press {
+  background:#333;
+   -webkit-transform:translateY(240px) rotateX(80deg);
+           transform:translateY(240px) rotateX(80deg);
+}
+
+#zebra {
+  position:absolute;
+  top:20px;
+  left:calc(50vw - 135px);
+  width:288px;
+  height:288px;
+  margin:7em auto;
+  z-index:1;
+  pointer-events:none;
+  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/zebra.png);
+  -webkit-animation:eyes 4s steps(2) infinite;
+          animation:eyes 4s steps(2) infinite;
+}
+
+@-webkit-keyframes eyes {
+  0%, 90% { background-position:0 0 }
+  100% { background-position:-576px 0 }
+}
+
+@keyframes eyes {
+  0%, 90% { background-position:0 0 }
+  100% { background-position:-576px 0 }
+}
