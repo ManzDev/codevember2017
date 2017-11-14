@@ -1,0 +1,92 @@
+let ground = document.querySelector('.ground');
+
+Array.prototype.shuffle = function () {
+  for (let i = this.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [this[i], this[j]] = [this[j], this[i]];
+  }
+  return this;
+}
+
+let paridad = [0, 0, 0, 1, 1].shuffle();
+//console.log(paridad);
+
+class Mouse {
+  constructor(id) {
+    this.mouse = document.createElement('div');
+    
+    //if (~~(Math.random() * 2) == 0) {
+    if (id == 0) {
+      this.mouse.className = 'mouse';
+      this.mouse.style.left = ~~(Math.random() * 200) + 'px';
+    } else {
+      this.mouse.className = 'mouse mirror';
+      this.mouse.style.transform = 'scale(-1,1) translateX(' + ~~(Math.random() * 200) + 'px)';
+      this.mouse.style.left = -1024 + ~~(Math.random() * 200) + 'px';
+    }
+    this.zindex = 5 + ~~(Math.random() * 50);
+    this.mouse.style.zIndex = this.zindex;
+    this.mouse.style.top = (295 + this.zindex) + 'px';
+    ground.insertAdjacentElement('beforebegin', this.mouse);
+  }
+  
+  update() {
+    
+    if (~~(Math.random() * 250) == 0) 
+      click();
+    
+  }
+}
+
+let mouses = []
+
+function click() {
+  console.log('click');
+  let i = ~~(Math.random() * mouses.length);
+  mouses[i].mouse.classList.add('click');
+  setTimeout(function() {
+    mouses[this].mouse.classList.remove('click');
+  }.bind(i), 250 + ~~(Math.random() * 500));
+}
+
+let update = function() {
+  
+  // Add mouse
+  if (~~(Math.random() * 450) == 0) {
+    if (mouses.length < 5) {
+      mouses.push(new Mouse(paridad.pop()));
+    }
+  }
+  
+  for (let i = 0; i < mouses.length; i++)
+    mouses[i].update();
+  
+}
+
+function loop() {
+  requestAnimationFrame(loop);
+  update();
+}
+
+function fadeToBlack() {
+  let fade = document.createElement('div');
+  fade.className = 'fade';
+  document.body.appendChild(fade);
+  let p = 100;
+  
+  update = function() {
+    if (p>0) {
+      if (p>20)
+        p = p - 1;
+      else if (p>15)
+        p = p - .05
+      else
+        p = p - .5
+      fade.style.background = 'radial-gradient(circle at center, transparent '+p+'%, #000 '+p+'%)';
+    }   
+  }
+}
+
+//loop();
+setTimeout(loop, 15000);
+setTimeout(fadeToBlack, 66000);
