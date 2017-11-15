@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,800');
+
+html {
+  background:#555;
+  overflow:hidden;
+}
+
+.data {
+  position:relative;
+  z-index:1;
+  text-align:center;  
+}
+
+h1, h2, .ghost {
+  font-family:Montserrat;
+  font-weight:400;
+  letter-spacing:-1px;
+  margin:0;
+}
+  
+h1 {
+  font-size:64px;
+  color:#1b1b1b;
+  font-weight: 800;
+  letter-spacing: -2px;
+  margin: -12px;  
+}
+
+h2 {
+  font-size:24px;
+  color:#888;
+}
+
+.ghost {
+  font-weight:400;
+  font-size:15px;
+  color:#CCC;
+  display:inline-block;
+  margin:8px 2px;
+  padding:8px;
+  border:1px solid #CCC;
+  text-decoration:none;
+}
+
+a.ghost:hover {
+  -webkit-transition:all .5s linear;
+  transition:all .5s linear;
+  background:rgba(50,50,50, .2);
+  border-color:#660000;
+  color:#660000;
+}
+
+#screen {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+}
+
+.speaker {
+  position:absolute;
+  top:100px;
+  width:288px;
+  height:325px;
+}
+.speaker1 { right:calc(60vw) }
+.speaker2 { left:calc(60vw) }
+
+.data.anim,
+.speaker.anim {
+  -webkit-animation:movebeat .5s linear alternate infinite;
+          animation:movebeat .5s linear alternate infinite;  
+}
+
+.speaker.anim .tweet,
+.speaker.anim .low {
+  -webkit-animation:lightbeat .5s linear alternate infinite;
+          animation:lightbeat .5s linear alternate infinite;  
+}
+
+.speaker .tweet {
+  width:75px;
+  height:75px;
+  -webkit-transform-origin:70% 20%;
+          transform-origin:70% 20%;  
+}
+
+.speaker .low {
+  width:150px;
+  height:150px;
+  -webkit-transform-origin:50% 50%;
+          transform-origin:50% 50%;  
+}
+
+.speaker .tweet::after,
+.speaker .low::after {
+  content:" ";
+  display:block;
+  background:#000;
+  border-radius:50%;
+}
+
+.speaker.anim .tweet::after,
+.speaker.anim .low::after {
+  -webkit-animation:beat .5s linear alternate infinite;
+          animation:beat .5s linear alternate infinite;
+}
+
+.speaker .tweet::after {
+  width:35px;
+  height:35px;
+  margin:1.2em auto;
+}
+.speaker .low::after {
+  width:60px;
+  height:60px;
+  margin:2.6em auto;
+}
+
+@-webkit-keyframes beat {
+  0%, 75% {
+    -webkit-transform:scale(1);
+            transform:scale(1);
+  }
+  100% {
+    -webkit-transform:scale(1.6);
+            transform:scale(1.6);
+  }
+}
+
+@keyframes beat {
+  0%, 75% {
+    -webkit-transform:scale(1);
+            transform:scale(1);
+  }
+  100% {
+    -webkit-transform:scale(1.6);
+            transform:scale(1.6);
+  }
+}
+
+@-webkit-keyframes lightbeat {
+  0%, 75% {
+    -webkit-transform:scale(1);
+            transform:scale(1);
+  }
+  100% {
+    -webkit-transform:scale(1.1);
+            transform:scale(1.1);
+  }
+}
+
+@keyframes lightbeat {
+  0%, 75% {
+    -webkit-transform:scale(1);
+            transform:scale(1);
+  }
+  100% {
+    -webkit-transform:scale(1.1);
+            transform:scale(1.1);
+  }
+}
+
+@-webkit-keyframes movebeat {
+  0% {
+    -webkit-transform:rotate(-5deg);
+            transform:rotate(-5deg);
+  }
+  15%, 85% {
+    -webkit-transform:rotate(0);
+            transform:rotate(0);
+  }
+  100% {
+    -webkit-transform:rotate(5deg);
+            transform:rotate(5deg);
+  }
+}
+
+@keyframes movebeat {
+  0% {
+    -webkit-transform:rotate(-5deg);
+            transform:rotate(-5deg);
+  }
+  15%, 85% {
+    -webkit-transform:rotate(0);
+            transform:rotate(0);
+  }
+  100% {
+    -webkit-transform:rotate(5deg);
+            transform:rotate(5deg);
+  }
+}
+
+.rockguy, .guitar, .rockhand {
+  width:256px;
+  height:256px;
+  position:absolute;  
+}  
+
+.rockguy {
+  top:150px;
+  left:calc(50vw - 128px);
+  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/rockguy.png) no-repeat;
+  background-position:0 0;
+  z-index:2;
+}
+
+.rockguy.head {
+  -webkit-animation:rockguyhead 1s steps(2) infinite;
+          animation:rockguyhead 1s steps(2) infinite;
+}
+
+@-webkit-keyframes rockguyhead {
+  0% { background-position:0 0 }
+  100% { background-position:-512px 0 }
+}
+
+@keyframes rockguyhead {
+  0% { background-position:0 0 }
+  100% { background-position:-512px 0 }
+}
+
+.guitar {
+  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/guitar-pixel.png) no-repeat;
+  top: 30px;
+  left: 22px;
+}
+
+.rockhand {
+  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/rock-hands.png) no-repeat;
+  z-index:5;
+}
+
+.rockhand.i {
+  left: 146px;
+  top: -19px;
+}
+
+.anim .rockhand.i {
+  -webkit-animation:movehandi .5s linear infinite alternate;
+          animation:movehandi .5s linear infinite alternate;
+}
+
+.rockhand.d {
+  top: 34px;
+  left: 39px;
+}
+
+.anim .rockhand.d {
+  -webkit-animation:movehandd 8s linear infinite;
+          animation:movehandd 8s linear infinite;
+}
+
+@-webkit-keyframes movehandi {
+  0% {
+    -webkit-transform:translateX(0);
+            transform:translateX(0)
+  }
+  100% {
+    -webkit-transform:translateX(5px);
+            transform:translateX(5px);
+  }
+}
+
+@keyframes movehandi {
+  0% {
+    -webkit-transform:translateX(0);
+            transform:translateX(0)
+  }
+  100% {
+    -webkit-transform:translateX(5px);
+            transform:translateX(5px);
+  }
+}
+
+@-webkit-keyframes movehandd {
+  0%, 12.5%, 37.5%, 65%, 100% { -webkit-transform:translate(0,0); transform:translate(0,0) }
+  5%, 30%, 55% { -webkit-transform:translate(-10px,10px); transform:translate(-10px,10px) }
+  10%, 35%, 60% { -webkit-transform:translate(0, -10px); transform:translate(0, -10px) }
+}
+
+@keyframes movehandd {
+  0%, 12.5%, 37.5%, 65%, 100% { -webkit-transform:translate(0,0); transform:translate(0,0) }
+  5%, 30%, 55% { -webkit-transform:translate(-10px,10px); transform:translate(-10px,10px) }
+  10%, 35%, 60% { -webkit-transform:translate(0, -10px); transform:translate(0, -10px) }
+}
+
+.ground {
+  position:absolute;
+  top: 384px;
+  left:0;
+  border-top:1px solid #111;
+  width:100vw;
+  height: 100px;
+  background: -webkit-linear-gradient(top, #0e0e0e, transparent);
+  background: linear-gradient(to bottom, #0e0e0e, transparent);
+  z-index:-1;
+}
