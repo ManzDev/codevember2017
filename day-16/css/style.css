@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Press+Start+2P|Annie+Use+Your+Telescope');
+
+html {
+  background:#000;
+  overflow:hidden;
+}
+
+.data {
+  position:relative;
+  z-index:6;
+  text-align:center;
+  top:calc(50vh - 175px);
+}
+
+.inputbox {
+  background: #999;
+  width: 58px;
+  margin: 0 auto 2.5em;
+  height: 32px;
+  border-radius: 3px;
+  border: 1px solid #666;
+}
+
+h1, h2, .ghost {
+  font-family:Montserrat;
+  font-weight:600;  
+  margin:0;
+}
+  
+h1 {
+  font-size:66px;
+  color:#FFF;
+}
+
+h2 {
+  font-size:24px;
+  color:#000;
+  text-shadow:0 0 8px #FFF;
+}
+
+.ghost {
+  font-weight:400;
+  font-size:15px;
+  color:#CCC;
+  display:inline-block;
+  margin:8px 2px;
+  padding:8px;
+  border:1px solid #CCC;
+  text-decoration:none;
+  background:#000;
+}
+
+a.ghost:hover {
+  -webkit-transition:all .5s linear;
+  transition:all .5s linear;
+  background:rgba(50,50,50, .5);
+  border-color:#f2ea00;
+  color:#f2ea00;
+}
+
+#screen {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+}
+
+/****** *******/
+
+#internet {
+  margin:auto;
+  position:relative;
+  top:calc(50vh - 100px);
+}
+
+#internet > div {
+  display:inline-block;
+}
+
+.pc {
+  width:256px;
+  height:256px;
+  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/computer-pixel.png) no-repeat;
+  background-size:cover;
+  position:absolute;
+}
+
+.pc1 { left:100px }
+.pc2 { right:100px }
+
+.earth {
+  width:200px;
+  height:200px;
+  background:#000 url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/world-map.png);
+  background-size:550px;
+  border-radius:50%;
+  -webkit-transform:rotate(10deg) scale(1.1);
+          transform:rotate(10deg) scale(1.1);
+  position:absolute;
+  left:calc(50vw - 100px);
+  z-index:5;
+  border:0;
+  box-shadow:5px 5px 5px RGBA(0,0,0, .85) inset,
+             -10px -10px 25px 10px RGBA(0,0,0, .95) inset,
+             1px 1px 5px #000 inset,
+             -1px -1px 5px #000 inset,
+             0 0 20px RGBA(255,255,255, .15);
+}
+
+.earth.spin {
+  -webkit-animation:worldspin 10s linear infinite;
+          animation:worldspin 10s linear infinite;  
+}
+
+@-webkit-keyframes worldspin {
+  0% { 
+    background-position:0 0;
+  }
+  100% { 
+    background-position: 1096px 0 
+  }
+}
+
+@keyframes worldspin {
+  0% { 
+    background-position:0 0;
+  }
+  100% { 
+    background-position: 1096px 0 
+  }
+}
+
+.network {
+  width:calc(100vw - 400px);
+  height:10px;
+  background:#33F;
+  position:absolute;
+  top:100px;
+  left:200px;
+  z-index:-1;
+}
+
+.bit {
+  width:15px;
+  height:30px;
+  background:#33F;
+  position:absolute;
+  top:-10px;
+  left:-75px;
+  z-index:-1;
+}
+
+#internet.anim .bit {
+  -webkit-animation:emit 5s linear infinite;
+          animation:emit 5s linear infinite;  
+}
+
+.bit::after {
+  content:attr(data-bit);
+  font-family:'Press Start 2P';
+  color:#FFF;
+  font-size:28px;  
+  -webkit-animation:floatbit 1s ease-in-out alternate infinite;  
+          animation:floatbit 1s ease-in-out alternate infinite;
+  position:relative;
+  left: -5px;
+}
+
+.bit2 { left:-25px }
+.bit3 { left:25px }
+.bit4 { left:75px }
+
+@-webkit-keyframes emit {
+  0% { -webkit-transform:translateX(0); transform:translateX(0) }
+  100% { -webkit-transform:translateX(calc(100vw - 400px)); transform:translateX(calc(100vw - 400px)) }
+}
+
+@keyframes emit {
+  0% { -webkit-transform:translateX(0); transform:translateX(0) }
+  100% { -webkit-transform:translateX(calc(100vw - 400px)); transform:translateX(calc(100vw - 400px)) }
+}
+
+@-webkit-keyframes floatbit {
+  0% { top:-65px }
+  100% { top:-35px }
+  0%, 100% { opacity:.25 }
+  50% { opacity:1 }  
+}
+
+@keyframes floatbit {
+  0% { top:-65px }
+  100% { top:-35px }
+  0%, 100% { opacity:.25 }
+  50% { opacity:1 }  
+}
+
+.screen {
+  position: absolute;
+  top: 25px;
+  left: 36px;
+  width: 200px;
+  height: 128px;
+}
+
+.text {
+  width: 200px;
+  height: 50px;
+  font-family:'Press Start 2P';
+  color:#FFF;
+  font-size:22px;
+  position: absolute;
+  top: 40px;
+  text-align:center;
+}
+
+.jump {
+  -webkit-animation:jump 1s ease-in-out infinite;
+          animation:jump 1s ease-in-out infinite;
+}
+
+.jump .text {
+    opacity: .05;
+    -webkit-transform: scale(1.8);
+            transform: scale(1.8);
+}
+
+.pc2.jump .screen {
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANAAAACQCAMAAABOIhUqAAAABlBMVEUAAAD///+l2Z/dAAAAm0lEQVR4Ae3PMQ6AMAxDUXL/S7PA0i0DWJbe39v4XZIkSZKkXXMU+AcICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICKgoSZLmqWBfHwgICAgIKAALQOpBQEBAQEBvc/Q1dH2vHwQEBAQEFDi8fw8EBAQEBLQfWjMcCOi/gICAJEmSJEk30GMNQSt8VYcAAAAASUVORK5CYII=);
+}
+
+@-webkit-keyframes jump {
+  0%, 25%, 75%, 100% { -webkit-transform:translateY(0); transform:translateY(0) }
+  50% { -webkit-transform:translateY(-30px); transform:translateY(-30px)}
+}
+
+@keyframes jump {
+  0%, 25%, 75%, 100% { -webkit-transform:translateY(0); transform:translateY(0) }
+  50% { -webkit-transform:translateY(-30px); transform:translateY(-30px)}
+}
+
+.yt, .cp, .fb, .tw {
+  background:url(https://raw.githubusercontent.com/ManzDev/codevember2017/master/assets/screens.png);
+}
+
+.cp { background-position:0 0 }
+.yt { background-position:200px 0 }
+.tw { background-position:400px 0 }
+.fb { background-position:600px 0 }
+
+.tip {
+  font-family:'Annie Use Your Telescope';
+  font-size:28px;
+  position:absolute;
+  color:#AAA;
+  top:-45px;
+  left:calc(50vw - 55px);
+}
