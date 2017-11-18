@@ -22,6 +22,7 @@ Here, my 30 creative experiments:
 | **Day 14** | 🧀 Cheese | [link](https://codepen.io/manz/pen/jawjgo) | [link](https://manzdev.github.io/codevember2017/day-14/) | SVG, Animation, JS | 🎵 [DJ Otaking 333](https://soundcloud.com/marquinho-otaking-433341461/2001-a-space-odyssey) |
 | **Day 15** | 🤘🏽 Rock | [link](https://codepen.io/manz/pen/LOzVrM) | [link](https://manzdev.github.io/codevember2017/day-15/) | SVG, Animation, Howler.js | 🎵 [8 Bit Universe](https://8bituniverse.bandcamp.com/track/du-hast-8-bit-tribute-to-rammstein) |
 | **Day 16** | 🌍 Internet | [link](https://codepen.io/manz/pen/JOOYNV) | [link](https://manzdev.github.io/codevember2017/day-16/) | CSS Animation, Howler.js, JS | 🎵[FantomenK](https://soundcloud.com/fantomenk/dischipo-2009) |
+| **Day 17** | 🐌 Speed | [link](https://codepen.io/manz/pen/WXdbBP) | [link](https://manzdev.github.io/codevember2017/day-17/) | CSS Animation, Howler.js, JS | 🎵[FantomenK](https://soundcloud.com/fantomenk/fantomenk-playing-with-power) |
 
 <small>* HTML5 and CSS3 always used</small>
 

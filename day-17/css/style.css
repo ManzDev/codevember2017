@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,800|Faster+One|Press+Start+2P');
+
+@font-face {
+  font-family: 'Segment7';
+  src: url('https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/segment7.woff2'),
+       url('https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/segment7.woff'),
+       url('https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/segment7.ttf');    
+}
+
+html {
+  background:#000;
+  overflow:hidden;
+}
+
+.data {
+  position:relative;
+  z-index:1;
+  text-align:center;  
+}
+
+h1, h2, .ghost {
+  font-family:Montserrat;
+  font-weight:600;  
+  margin:0;
+}
+  
+h1 {
+  font-weight:400;
+  letter-spacing:-2px;
+  font-size:72px;
+  color:#444;
+  font-family:'Faster One';
+}
+
+h2 {
+  font-size:24px;
+  color:#888;
+}
+
+.ghost {
+  font-weight:400;
+  font-size:15px;
+  color:#CCC;
+  display:inline-block;
+  margin:8px 2px;
+  padding:8px;
+  border:1px solid #CCC;
+  text-decoration:none;
+}
+
+a.ghost:hover {
+  -webkit-transition: all .5s linear;
+  transition:all .5s linear;
+  background:rgba(50,50,50, .2);
+  border-color:#f2ea00;
+  color:#f2ea00;
+}
+
+#screen {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+}
+
+/** Codevember **/
+
+.lcd, .backlcd {
+  font-family: 'Segment7';
+  font-size:122px;
+  width:225px;
+  text-align:right;
+  
+  position:absolute;
+  top:10px;
+  right:25px;
+}
+
+.backlcd { color:#140000 }
+.lcd { color:#cc0000 }
+
+.key::before {
+    content: "Press";
+    font-size: 20px;
+    color: #FFF;
+    display: block;
+    position: absolute;
+    top: -40px;
+}
+
+.key {
+  font-family:'Press Start 2P';
+  font-size:64px;
+  color:#111;
+  width:100px;
+  height:100px;
+  border-radius:8px;
+  background:#555;
+  border:6px outset #777;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  position:absolute;
+  top:200px;
+  right:75px;
+  -webkit-animation:blink 1s steps(2) infinite;
+          animation:blink 1s steps(2) infinite;  
+}
+
+.key.press { -webkit-animation:press 1s linear infinite alternate; animation:press 1s linear infinite alternate }
+.key.off { opacity:0 }
+
+@-webkit-keyframes press {
+  0% { -webkit-transform:scale(1); transform:scale(1) }
+  100% { -webkit-transform:scale(1.6); transform:scale(1.6) }
+}
+
+@keyframes press {
+  0% { -webkit-transform:scale(1); transform:scale(1) }
+  100% { -webkit-transform:scale(1.6); transform:scale(1.6) }
+}
+
+@-webkit-keyframes blink {
+  0% { visibility:hidden }
+  100% { visibility:visible }
+}
+
+@keyframes blink {
+  0% { visibility:hidden }
+  100% { visibility:visible }
+}
+
+.board {
+  position:absolute;
+  top:200px;
+  left:calc(50vw - 400px);
+  background:-webkit-linear-gradient(bottom, #222, #090909);
+  background:linear-gradient(to top, #222, #090909);
+  width:800px;
+  height:175px;
+  border-right:6px solid #AAA;
+}
+
+.snail {
+  position:relative;
+  top:-100px;
+  width:128px;
+  height:128px;
+  background-image:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/snail-pixel.png);
+  background-position:0 0;
+  z-index:8;
+}
+
+.snail.run {
+   -webkit-animation:run .5s steps(2) infinite;
+           animation:run .5s steps(2) infinite;
+/*   background-position-x: 128px; */
+}
+
+.snail1 { background-position-y:0 }
+.snail2 { background-position-y:128px }
+
+@-webkit-keyframes run {
+  0% { background-position-x: 0 }
+  100% { background-position-x: 256px }
+}
+
+@keyframes run {
+  0% { background-position-x: 0 }
+  100% { background-position-x: 256px }
+}
+
+.snail.winner::after {
+    content: " ";
+    background: url(https://raw.githubusercontent.com/ManzDev/codevember2017/master/assets/diamond.png);
+    height: 64px;
+    width: 64px;
+    /* background: #FFF; */
+    background-size: cover;
+    display: block;
+    position: relative;
+    top: 76px;
+    left: 112px;
+}
+
+.turnoff {
+  background: RGBA(0,0,0, .75);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+}
