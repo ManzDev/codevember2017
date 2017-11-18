@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+html {
+  background:#000;
+  overflow:hidden;
+}
+
+.data {
+  position:relative;
+  z-index:1;
+  text-align:center;
+  top:150px;
+}
+
+h1, h2, .ghost {
+  font-family:Montserrat;
+  font-weight:600;  
+  margin:0;
+}
+  
+h1 {
+  font-size:54px;
+  color:#444;
+}
+
+h2 {
+  font-size:24px;
+  color:#888;
+}
+
+.ghost {
+  font-weight:400;
+  font-size:15px;
+  color:#CCC;
+  display:inline-block;
+  margin:8px 2px;
+  padding:8px;
+  border:1px solid #CCC;
+  text-decoration:none;
+}
+
+a.ghost:hover {
+  -webkit-transition:all .5s linear;
+  transition:all .5s linear;
+  background:rgba(50,50,50, .2);
+  border-color:#f2ea00;
+  color:#f2ea00;
+}
+
+#screen {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+}
+
+/**** Codevember ****/
+
+#engine {
+  display:block;
+  width:514px;
+  margin:50px auto;
+  position:relative;
+  left:25px;
+  height:336px;
+  fill:none;
+  stroke:#FFF;
+  stroke-width:5px;
+  stroke-linecap:square;
+  
+  stroke-dasharray: 2000px 2000px;
+  stroke-dashoffset: 2000px;
+  -webkit-animation: paint 20s linear forwards,
+             light 2.5s ease-in-out 5s,
+             led 1.5s ease 7.5s alternate infinite;
+          animation: paint 20s linear forwards,
+             light 2.5s ease-in-out 5s,
+             led 1.5s ease 7.5s alternate infinite;
+}
+
+@-webkit-keyframes paint {
+  0% { stroke-dashoffset: 2000px }
+  100% { stroke-dashoffset: 0px }
+}
+
+@keyframes paint {
+  0% { stroke-dashoffset: 2000px }
+  100% { stroke-dashoffset: 0px }
+}
+
+@-webkit-keyframes light {
+  0% { stroke:#FFF }
+  100% { stroke:#ce3e0a }
+}
+
+@keyframes light {
+  0% { stroke:#FFF }
+  100% { stroke:#ce3e0a }
+}
+
+@-webkit-keyframes led {
+  0% { stroke:#ce3e0a }
+  100% { stroke:#cea309 }
+}
+
+@keyframes led {
+  0% { stroke:#ce3e0a }
+  100% { stroke:#cea309 }
+}
+
+.container {
+  -webkit-perspective:1000px;
+          perspective:1000px;
+}
+
+#screen {
+  -webkit-animation:start .5s linear 1 5s,
+            motor .05s steps(2) infinite 6s;
+          animation:start .5s linear 1 5s,
+            motor .05s steps(2) infinite 6s;
+}
+
+@-webkit-keyframes start {
+  0% { -webkit-transform:translateY(0); transform:translateY(0) }
+  100% { -webkit-transform:translateY(-5px); transform:translateY(-5px) }
+}
+
+@keyframes start {
+  0% { -webkit-transform:translateY(0); transform:translateY(0) }
+  100% { -webkit-transform:translateY(-5px); transform:translateY(-5px) }
+}
+
+@-webkit-keyframes motor {
+  0% { -webkit-transform:translateY(5px); transform:translateY(5px) }
+  100% { -webkit-transform:translateY(-5px); transform:translateY(-5px) }
+}
+
+@keyframes motor {
+  0% { -webkit-transform:translateY(5px); transform:translateY(5px) }
+  100% { -webkit-transform:translateY(-5px); transform:translateY(-5px) }
+}
+
+.data {
+  -webkit-animation:motor .05s steps(2) infinite 6s;
+          animation:motor .05s steps(2) infinite 6s;
+}
