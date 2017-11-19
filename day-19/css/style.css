@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Lobster');
+
+html {
+  background:#000;
+  overflow:hidden;
+}
+
+.data {
+  position:relative;
+  z-index:1;
+  text-align:center;  
+}
+
+h1, h2, .ghost {
+  font-family:Montserrat;
+  font-weight:600;  
+  margin:0;
+}
+  
+h1 {
+  font-family:Lobster;
+  font-size:64px;
+  color:#000;
+  text-shadow:0 0 10px #ceac03;
+}
+
+h2 {
+  font-size:24px;
+  color:#111;
+  text-shadow:0 0 15px #FFF;
+}
+
+.ghost {
+  font-weight:400;
+  font-size:15px;
+  color:#CCC;
+  display:inline-block;
+  margin:8px 2px;
+  padding:8px;
+  border:1px solid #CCC;
+  text-decoration:none;
+}
+
+a.ghost:hover {
+  -webkit-transition:all .5s linear;
+  transition:all .5s linear;
+  background:rgba(50,50,50, .2);
+  border-color:#f2ea00;
+  color:#f2ea00;
+}
+
+#screen {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+}
+
+/*** Codevember ***/
+
+.moon {
+  position:absolute;
+  width:128px;
+  height:128px;
+  border-radius:50%;
+  background:#FFF;
+
+  z-index:-1;
+  opacity:1;
+  -webkit-animation:moonmove 60s linear infinite;
+          animation:moonmove 60s linear infinite;
+}
+
+@-webkit-keyframes moonmove {
+  0% {
+    top:calc(100vh - 128px);
+    left:-256px;
+  }
+  
+  25%, 75% {
+    top:calc(30vh - 128px);
+  }
+  
+  50% {
+    top:calc(3vh);
+  }
+  
+  100% {
+    top:calc(100vh - 128px);
+    left:calc(100vw + 256px);
+  }
+  
+  25%, 75% { opacity: 1; box-shadow:0 0 25px RGBA(255,255,255, .75) }
+  0%, 100% { opacity: 0; box-shadow:0 0 25px RGBA(255,255,255, 0) }
+}
+
+@keyframes moonmove {
+  0% {
+    top:calc(100vh - 128px);
+    left:-256px;
+  }
+  
+  25%, 75% {
+    top:calc(30vh - 128px);
+  }
+  
+  50% {
+    top:calc(3vh);
+  }
+  
+  100% {
+    top:calc(100vh - 128px);
+    left:calc(100vw + 256px);
+  }
+  
+  25%, 75% { opacity: 1; box-shadow:0 0 25px RGBA(255,255,255, .75) }
+  0%, 100% { opacity: 0; box-shadow:0 0 25px RGBA(255,255,255, 0) }
+}
+
+#canvas {
+  background: -webkit-linear-gradient(top, transparent, #000 50%);
+  background: linear-gradient(to bottom, transparent, #000 50%);
+}
+
+.cloud {
+  position:absolute;
+  width:256px;
+  height:128px;
+  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/pixel-cloud.png);
+  -webkit-animation:cloud 120s linear infinite;
+          animation:cloud 120s linear infinite;
+  mix-blend-mode:soft-light;
+}
+
+.cloud.type1 { background-position:0 0; }
+.cloud.type2 { background-position:0 128px; }
+.cloud.type3 { background-position:0 0; -webkit-transform:scaleX(-1); transform:scaleX(-1) }
+.cloud.type4 { background-position:0 128px; -webkit-transform:scaleX(-1); transform:scaleX(-1) }
