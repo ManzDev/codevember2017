@@ -4,30 +4,34 @@
 
 Here, my 30 creative experiments:
 
-| Day | Theme | CodePen | GitHub | Tecnologies used* | Music by |
-|-----|-------|--------------|-------------|-------------------|----------|
-| **Day 1** | 🌌 Galaxy | [link](https://codepen.io/manz/pen/KypYmz) | [link](https://manzdev.github.io/codevember2017/day-1/) | JS, Canvas | 🎵 [Crig](https://soundcloud.com/crig-1) |
-| **Day 2** | 🎂 Cake | [link](https://codepen.io/manz/pen/vWNrdE) | [link](https://manzdev.github.io/codevember2017/day-2/) | SVG | 🎵 [Michael Aker](https://soundcloud.com/michael-manotas)  |
-| **Day 3** | 🌲 Tree | [link](https://codepen.io/manz/pen/bYEvoL) | [link](https://manzdev.github.io/codevember2017/day-3/) | JS | 🎵 [Finn Formiga](https://soundcloud.com/finn-formiga) |
-| **Day 4** | 💎 Sapphire | [link](https://codepen.io/manz/pen/zPqvmg) | [link](https://manzdev.github.io/codevember2017/day-4/) | Animate.css, JS, ThreeJS | 🎵 [WillRock/DaMonz](http://mirrorimage.ocremix.org/) |
-| **Day 5** | 🗡 Sword | [link](https://codepen.io/manz/pen/wPGQjq) | [link](https://manzdev.github.io/codevember2017/day-5/) | JS, Howler.js, IziToast.js | 🎵 [Demoscene TimeMachine](https://soundcloud.com/demoscenetimemachine/power-up) |
-| **Day 6** | ⛈️ Storm | [link](https://codepen.io/manz/full/WXxxZE) | [link](https://manzdev.github.io/codevember2017/day-6/) | MagicInput, JS, Canvas, Howler.js | 🎵 [Hirokazu Tanaka](https://www.youtube.com/watch?v=TpbTnufHqnI) |
-| **Day 7** | 🛏️ Pillow | [link](https://codepen.io/manz/full/YEWmGG/) | [link](https://manzdev.github.io/codevember2017/day-7/) | SVG, Howler.js | 🎵 [Coma](https://soundcloud.com/scene_music/skogens-djur-014) |
-| **Day 8** | 🍦 Fridge | [link](https://codepen.io/manz/full/EbNjWy/) | [link](https://manzdev.github.io/codevember2017/day-8/) | SVG | 🎵 [Toby Fox/GameChops](https://soundcloud.com/gamechops/spooktune-chiptune) |
-| **Day 9** | 🍟 French Fries | [link](https://codepen.io/manz/pen/eeBPaz) | [link](https://manzdev.github.io/codevember2017/day-9/) | Howler.js, Animation CSS | 🎵 [Razor 1911](https://soundcloud.com/dailychiptune/razor1911-starcraft-2-wings-of-liberty-crack) |
-| **Day 10** | 🚀 Rocket | [link](https://codepen.io/manz/pen/vWgrwp) | [link](https://manzdev.github.io/codevember2017/day-10/) | Howler.js, Canvas, JS | 🎵 [We Are Carnival](https://www.youtube.com/watch?v=87U-eKOAmyQ) |
-| **Day 11** | 🚲 Bike | [link](https://codepen.io/manz/pen/NwjPJd) | [link](https://manzdev.github.io/codevember2017/day-11/) | Howler.js, Canvas, JS | 🎵 [McKlain](https://soundcloud.com/mcklain/the-grid-amstrad) |
-| **Day 12** | 🦓 Zebra | [link](https://codepen.io/manz/pen/LOyrMp/) | [link](https://manzdev.github.io/codevember2017/day-12/) | Howler.js, JS, Animation CSS | 🎵 [PaperLaur](https://soundcloud.com/paperlaur/hello-happier-times) |
-| **Day 13** | 🍊 Orange | [link](https://codepen.io/manz/pen/jawyyQ) | [link](https://manzdev.github.io/codevember2017/day-13/) | SVG, Animation, Blend modes | 🎵 [Mike Skitch](https://soundcloud.com/skitchstudio/naru-embracing-the-pulse-remix-from-ori-and-the-blind-forest) |
-| **Day 14** | 🧀 Cheese | [link](https://codepen.io/manz/pen/jawjgo) | [link](https://manzdev.github.io/codevember2017/day-14/) | SVG, Animation, JS | 🎵 [DJ Otaking 333](https://soundcloud.com/marquinho-otaking-433341461/2001-a-space-odyssey) |
-| **Day 15** | 🤘🏽 Rock | [link](https://codepen.io/manz/pen/LOzVrM) | [link](https://manzdev.github.io/codevember2017/day-15/) | SVG, Animation, Howler.js | 🎵 [8 Bit Universe](https://8bituniverse.bandcamp.com/track/du-hast-8-bit-tribute-to-rammstein) |
-| **Day 16** | 🌍 Internet | [link](https://codepen.io/manz/pen/JOOYNV) | [link](https://manzdev.github.io/codevember2017/day-16/) | CSS Animation, Howler.js, JS | 🎵[FantomenK](https://soundcloud.com/fantomenk/dischipo-2009) |
-| **Day 17** | 🐌 Speed | [link](https://codepen.io/manz/pen/WXdbBP) | [link](https://manzdev.github.io/codevember2017/day-17/) | CSS Animation, Howler.js, JS | 🎵[FantomenK](https://soundcloud.com/fantomenk/fantomenk-playing-with-power) |
-| **Day 18** | 🚗 Motors | [link](https://codepen.io/manz/pen/oopwBJ) | [link](https://manzdev.github.io/codevember2017/day-18/) | SVG, CSS Animation, Howler.js | - |
-| **Day 19** | 🐟 Ocean | [link](https://codepen.io/manz/pen/pdpGPz) | [link](https://manzdev.github.io/codevember2017/day-19/) | Animation, Blend, Canvas, JS | 🎵 [JJayBerthume](https://soundcloud.com/jjayberthume/ocean-side-8-bit) |
-| **Day 20** | 😎 Swag | [link](https://codepen.io/manz/pen/yPvopx) | [link](https://manzdev.github.io/codevember2017/day-20/) | Animation, JS, Howler.js | 🎵 [Janyork](https://soundcloud.com/janyork) |
+| Day | Theme | Links | Tecnologies used* | Music by | |
+|-----|-------|--------------|-------------|-------------------|----------|-|
+| **Day 1** | 🌌 Galaxy | [CodePen](https://codepen.io/manz/pen/KypYmz) / [GitHub](https://manzdev.github.io/codevember2017/day-1/) | JS, Canvas | 🎵 [Crig](https://soundcloud.com/crig-1) | |
+| **Day 2** | 🎂 Cake | [CodePen](https://codepen.io/manz/pen/vWNrdE) / [GitHub](https://manzdev.github.io/codevember2017/day-2/) | SVG, Animations, Transforms | 🎵 [Michael Aker](https://soundcloud.com/michael-manotas)  | |
+| **Day 3** | 🌲 Tree | [CodePen](https://codepen.io/manz/pen/bYEvoL) / [GitHub](https://manzdev.github.io/codevember2017/day-3/) | JS | 🎵 [Finn Formiga](https://soundcloud.com/finn-formiga) | ⭐🕹 |
+| **Day 4** | 💎 Sapphire | [CodePen](https://codepen.io/manz/pen/zPqvmg) / [GitHub](https://manzdev.github.io/codevember2017/day-4/) | Animate.css, JS, ThreeJS | 🎵 [WillRock/DaMonz](http://mirrorimage.ocremix.org/) | 🕹 |
+| **Day 5** | 🗡 Sword | [CodePen](https://codepen.io/manz/pen/wPGQjq) / [GitHub](https://manzdev.github.io/codevember2017/day-5/) | JS, Howler.js, IziToast.js | 🎵 [Demoscene TimeMachine](https://soundcloud.com/demoscenetimemachine/power-up) | 🕹 |
+| **Day 6** | ⛈️ Storm | [CodePen](https://codepen.io/manz/full/WXxxZE) / [GitHub](https://manzdev.github.io/codevember2017/day-6/) | MagicInput, JS, Canvas, Howler.js | 🎵 [Hirokazu Tanaka](https://www.youtube.com/watch?v=TpbTnufHqnI) | 🕹 |
+| **Day 7** | 🛏️ Pillow | [CodePen](https://codepen.io/manz/full/YEWmGG/) / [GitHub](https://manzdev.github.io/codevember2017/day-7/) | SVG, Howler.js | 🎵 [Coma](https://soundcloud.com/scene_music/skogens-djur-014) | ⭐ |
+| **Day 8** | 🍦 Fridge | [CodePen](https://codepen.io/manz/full/EbNjWy/) / [GitHub](https://manzdev.github.io/codevember2017/day-8/) | SVG | 🎵 [Toby Fox/GameChops](https://soundcloud.com/gamechops/spooktune-chiptune) | 🕹 |
+| **Day 9** | 🍟 French Fries | [CodePen](https://codepen.io/manz/pen/eeBPaz) / [GitHub](https://manzdev.github.io/codevember2017/day-9/) | Howler.js, Animation CSS | 🎵 [Razor 1911](https://soundcloud.com/dailychiptune/razor1911-starcraft-2-wings-of-liberty-crack) | ⭐ |
+| **Day 10** | 🚀 Rocket | [CodePen](https://codepen.io/manz/pen/vWgrwp) / [GitHub](https://manzdev.github.io/codevember2017/day-10/) | Howler.js, Canvas, JS | 🎵 [We Are Carnival](https://www.youtube.com/watch?v=87U-eKOAmyQ) | ⭐ |
+| **Day 11** | 🚲 Bike | [CodePen](https://codepen.io/manz/pen/NwjPJd) / [GitHub](https://manzdev.github.io/codevember2017/day-11/) | Howler.js, Canvas, JS | 🎵 [McKlain](https://soundcloud.com/mcklain/the-grid-amstrad) | ⭐ |
+| **Day 12** | 🦓 Zebra | [CodePen](https://codepen.io/manz/pen/LOyrMp/) / [GitHub](https://manzdev.github.io/codevember2017/day-12/) | Howler.js, JS, Animation CSS | 🎵 [PaperLaur](https://soundcloud.com/paperlaur/hello-happier-times) | ⭐ |
+| **Day 13** | 🍊 Orange | [CodePen](https://codepen.io/manz/pen/jawyyQ) / [GitHub](https://manzdev.github.io/codevember2017/day-13/) | SVG, Animation, Blend modes | 🎵 [Mike Skitch](https://soundcloud.com/skitchstudio/naru-embracing-the-pulse-remix-from-ori-and-the-blind-forest) | ⭐ |
+| **Day 14** | 🧀 Cheese | [CodePen](https://codepen.io/manz/pen/jawjgo) / [GitHub](https://manzdev.github.io/codevember2017/day-14/) | SVG, Animation, JS | 🎵 [DJ Otaking 333](https://soundcloud.com/marquinho-otaking-433341461/2001-a-space-odyssey) | ⭐ |
+| **Day 15** | 🤘🏽 Rock | [CodePen](https://codepen.io/manz/pen/LOzVrM) / [GitHub](https://manzdev.github.io/codevember2017/day-15/) | SVG, Animation, Howler.js | 🎵 [8 Bit Universe](https://8bituniverse.bandcamp.com/track/du-hast-8-bit-tribute-to-rammstein) | ⭐ |
+| **Day 16** | 🌍 Internet | [CodePen](https://codepen.io/manz/pen/JOOYNV) / [GitHub](https://manzdev.github.io/codevember2017/day-16/) | CSS Animation, Howler.js, JS | 🎵[FantomenK](https://soundcloud.com/fantomenk/dischipo-2009) | 🕹 |
+| **Day 17** | 🐌 Speed | [CodePen](https://codepen.io/manz/pen/WXdbBP) / [GitHub](https://manzdev.github.io/codevember2017/day-17/) | CSS Animation, Howler.js, JS | 🎵[FantomenK](https://soundcloud.com/fantomenk/fantomenk-playing-with-power) | 🕹 |
+| **Day 18** | 🚗 Motors | [CodePen](https://codepen.io/manz/pen/oopwBJ) / [GitHub](https://manzdev.github.io/codevember2017/day-18/) | SVG, CSS Animation, Howler.js | - | ⭐ |
+| **Day 19** | 🐟 Ocean | [CodePen](https://codepen.io/manz/pen/pdpGPz) / [GitHub](https://manzdev.github.io/codevember2017/day-19/) | Animation, Blend, Canvas, JS | 🎵 [JJayBerthume](https://soundcloud.com/jjayberthume/ocean-side-8-bit) | |
+| **Day 20** | 😎 Swag | [CodePen](https://codepen.io/manz/pen/yPvopx) / [GitHub](https://manzdev.github.io/codevember2017/day-20/) | Animation, JS, Howler.js | 🎵 [Janyork](https://soundcloud.com/janyork) | ⭐🕹 |
 
 <small>* HTML5 and CSS3 always used</small>
+
+Legend:
+* ⭐ Picked (Homepage) on CodePen
+* 🕹 Demo User-interactive
 
 
 
