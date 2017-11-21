@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Stardos+Stencil:700|Schoolbell');
+
+html {
+  background:#000;
+  overflow:hidden;
+}
+
+.data {
+  position:absolute;
+  bottom:calc(50vh - 150px);
+  left:calc(50vw - 250px);
+  z-index:1;
+  text-align:center;
+  background:RGBA(0,0,0, 1);
+  width:400px;
+  padding:40px;
+  border: 2px solid #FFF;
+  box-shadow: 0 0 15px 5px #000;
+  -webkit-transform:scale(1);
+          transform:scale(1);
+  -webkit-transition:all 1s linear;
+  transition:all 1s linear;
+}
+
+@-webkit-keyframes disappear {
+  0% { opacity:1 }
+  100% { opacity:0 }
+}
+
+@keyframes disappear {
+  0% { opacity:1 }
+  100% { opacity:0 }
+}
+
+h1, h2, .ghost {
+  font-family:Montserrat;
+  font-weight:600;  
+  margin:0;
+}
+  
+h1 {
+  font-family:'Stardos Stencil';
+  font-weight:700;
+  font-size:64px;
+  color:#FFF;
+  text-shadow:0 0 15px #777;
+}
+
+h2 {
+  font-size:24px;
+  color:#888;
+}
+
+.data span {
+  font-family: Schoolbell;
+  position:absolute;
+  font-size: 32px;
+  text-shadow: 0 0 5px darkred;
+  color: red;
+  -webkit-animation:spanenter .5s ease 1 5s forwards;
+          animation:spanenter .5s ease 1 5s forwards;
+  opacity:0;
+  -webkit-transform-origin: 75% 160%;
+          transform-origin: 75% 160%;
+}
+
+@-webkit-keyframes spanenter {
+  0% { -webkit-transform:scale(22) translate(25px, 45px) rotate(-10deg); transform:scale(22) translate(25px, 45px) rotate(-10deg); opacity:0 }
+  100% { -webkit-transform:scale(1) translate(25px, 45px) rotate(-10deg); transform:scale(1) translate(25px, 45px) rotate(-10deg); opacity:1 }
+}
+
+@keyframes spanenter {
+  0% { -webkit-transform:scale(22) translate(25px, 45px) rotate(-10deg); transform:scale(22) translate(25px, 45px) rotate(-10deg); opacity:0 }
+  100% { -webkit-transform:scale(1) translate(25px, 45px) rotate(-10deg); transform:scale(1) translate(25px, 45px) rotate(-10deg); opacity:1 }
+}
+
+.ghost {
+  font-weight:400;
+  font-size:15px;
+  color:#CCC;
+  display:inline-block;
+  margin:8px 2px;
+  padding:8px;
+  border:1px solid #CCC;
+  text-decoration:none;
+}
+
+a.ghost:hover {
+  -webkit-transition:all .5s linear;
+  transition:all .5s linear;
+  background:rgba(50,50,50, .2);
+  border-color:#f2ea00;
+  color:#f2ea00;
+}
+
+#screen {
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+}
+
+/** Codevember **/
+
+.black, .crowd, .crowd2 {
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+}
+
+.black {
+  background:-webkit-linear-gradient(top, black, RGBA(0,0,0, .95) 15%, RGBA(0,0,0, .85) 35%, RGBA(0,0,0, .75) 65%, transparent) 100%;
+  background:linear-gradient(to bottom, black, RGBA(0,0,0, .95) 15%, RGBA(0,0,0, .85) 35%, RGBA(0,0,0, .75) 65%, transparent) 100%;
+  z-index:0;
+}
+
+.crowd {
+  z-index:-1;
+  font-size:64px;
+  position:relative;
+}
+
+.crowd2 {
+  position:absolute;
+  bottom:-42px;
+  left:42px;
+  font-size:64px;
+  z-index:-2;
+}
+
+.crowd div {
+  position:absolute;
+}
+
+.ring {
+  position:absolute;
+  bottom:0;
+  left:calc(50vw - 400px);
+  width:800px;
+  height:600px;
+  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/ring-boxing.png);
+}
+
+.jump { -webkit-animation:jump .5s linear infinite forwards; animation:jump .5s linear infinite forwards }
+
+@-webkit-keyframes jump {
+  0% { -webkit-transform:translateY(0); transform:translateY(0) }
+  40% , 60% { -webkit-transform:translateY(-6px); transform:translateY(-6px) }
+  100% { -webkit-transform:translateY(0); transform:translateY(0) }  
+}
+
+@keyframes jump {
+  0% { -webkit-transform:translateY(0); transform:translateY(0) }
+  40% , 60% { -webkit-transform:translateY(-6px); transform:translateY(-6px) }
+  100% { -webkit-transform:translateY(0); transform:translateY(0) }  
+}
+
+.player1, .player2 {
+  font-size:64px;
+  position:absolute;
+  bottom:200px;
+  left:300px;
+}
+
+.player.move {
+  -webkit-animation:moveplayer 1s ease 0s infinite;
+          animation:moveplayer 1s ease 0s infinite;  
+}
+
+.player2 { 
+  left:400px;
+}
+
+@-webkit-keyframes moveplayer {
+  0%, 100% { -webkit-transform:translate(0,0); transform:translate(0,0) }
+  20% { -webkit-transform:translate(20px,0); transform:translate(20px,0) }
+  40% { -webkit-transform:translate(10px,0); transform:translate(10px,0) }
+  60% { -webkit-transform:translate(40px,0); transform:translate(40px,0) }
+  80% { -webkit-transform:translate(30px,0); transform:translate(30px,0) }
+}
+
+@keyframes moveplayer {
+  0%, 100% { -webkit-transform:translate(0,0); transform:translate(0,0) }
+  20% { -webkit-transform:translate(20px,0); transform:translate(20px,0) }
+  40% { -webkit-transform:translate(10px,0); transform:translate(10px,0) }
+  60% { -webkit-transform:translate(40px,0); transform:translate(40px,0) }
+  80% { -webkit-transform:translate(30px,0); transform:translate(30px,0) }
+}
+
+.player.block::after {
+  position: absolute;
+  display:block;
+  content: "🥊🥊";
+  font-size: 32px;
+  top: 12px;
+  left: 8px;
+  -webkit-animation:moveup .5s ease 1;
+          animation:moveup .5s ease 1;
+}
+
+@-webkit-keyframes moveup {
+  0% { -webkit-transform:translateY(0); transform:translateY(0) }
+  100% { -webkit-transform:translateY(-5px); transform:translateY(-5px) }
+}
+
+@keyframes moveup {
+  0% { -webkit-transform:translateY(0); transform:translateY(0) }
+  100% { -webkit-transform:translateY(-5px); transform:translateY(-5px) }
+}
+
+.player1.punch::before {
+    content: "🥊";
+    font-size: 32px;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 58px;
+    -webkit-transform: rotate(-300deg);
+            transform: rotate(-300deg);
+}
+
+.player1.punch::after {
+    content: "🥊";
+    font-size: 32px;
+    display: block;
+    position: absolute;
+    top: 33px;
+    left: 48px;
+    -webkit-transform: rotate(-300deg);
+            transform: rotate(-300deg);
+    -webkit-animation:punch .2s linear 1 .5s;
+            animation:punch .2s linear 1 .5s;
+}
+
+@-webkit-keyframes punch {
+  0% { -webkit-transform:translateX(0) rotate(-300deg); transform:translateX(0) rotate(-300deg) }
+  100% { -webkit-transform:translateX(30px) rotate(-300deg); transform:translateX(30px) rotate(-300deg) }
+}
+
+@keyframes punch {
+  0% { -webkit-transform:translateX(0) rotate(-300deg); transform:translateX(0) rotate(-300deg) }
+  100% { -webkit-transform:translateX(30px) rotate(-300deg); transform:translateX(30px) rotate(-300deg) }
+}
+
+.player2.punch::after {
+    content: "🥊🥊";
+    font-size: 32px;
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 62px;
+    -webkit-transform: rotate(300deg);
+            transform: rotate(300deg);
+}
+
+.player.strong {
+  -webkit-animation:none!important;
+          animation:none!important;
+}
+
+.player.strong::after {
+    content: "💪";
+    font-size: 48px;
+    position: absolute;
+    left: 62px;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+}
+
+.player.strong::before {
+    content: "💪";
+    font-size: 48px;
+    position: absolute;
+    right: 62px;
+}
+
+.data.off {
+  width: 200px;
+  height: 88px;
+  position:absolute;
+  bottom:30px;
+  left:calc(50vw - 150px);
+  -webkit-transform: scale(.75);
+          transform: scale(.75);
+  -webkit-transition:all 2s linear 1 forwards;
+  transition:all 2s linear 1 forwards;
+}
+
+.data.off a, .data.off h2 { display:none }
