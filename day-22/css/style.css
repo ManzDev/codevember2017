@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,800|Gloria+Hallelujah');
+
+html {
+  background:#000;
+  overflow:hidden;
+}
+
+.data {
+  position:relative;
+  z-index:1;
+  text-align:center;
+  width:400px;
+  margin:auto;
+  padding:20px;
+  background:RGBA(0,0,0, .75);
+}
+
+h1, h2, .ghost {
+  font-family:Montserrat;
+  font-weight:600;  
+  margin:0;
+}
+  
+h1 {
+  font-weight:800;
+  letter-spacing:-2px;
+  font-size:64px;
+  color:#444;
+}
+
+.data span {
+  font-family:'Gloria Hallelujah';
+  font-size:24px;
+  position:absolute;
+  top:35px;
+  -webkit-transform:translate(35px, 20px) rotate(-10deg);
+          transform:translate(35px, 20px) rotate(-10deg);
+  color:#78d8a0;
+}
+
+h2 {
+  font-size:24px;
+  color:#888;
+}
+
+.ghost {
+  font-weight:400;
+  font-size:15px;
+  color:#CCC;
+  display:inline-block;
+  margin:8px 2px;
+  padding:8px;
+  border:1px solid #CCC;
+  text-decoration:none;
+}
+
+a.ghost:hover {
+  -webkit-transition:all .5s linear;
+  transition:all .5s linear;
+  background:rgba(50,50,50, .2);
+  border-color:#f2ea00;
+  color:#f2ea00;
+}
+
+#screen {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+}
+
+/* Codevember */
+
+#chars {
+  max-width:90%;
+  margin:auto;
+  margin-top:200px;
+  text-align:center;
+}
+
+#chars svg {
+  display:inline-block;
+}
+
+svg {
+  width:225px;
+  height:275px;
+  display:block;
+}
+
+.bender { width:200px }
+.leela { width:350px }
+.amy { width:300px }
+
+svg path {
+  stroke-width:4px;
+  stroke:#FFF;
+  fill:transparent;
+  stroke-dasharray: 2000px 2000px;
+  stroke-dashoffset: 2000px;
+  -webkit-transform-origin:50% 50%;
+          transform-origin:50% 50%;
+  -webkit-animation:anim 4s linear 1 forwards,
+            color 2s linear 1 forwards,
+            dance 2s ease infinite;
+          animation:anim 4s linear 1 forwards,
+            color 2s linear 1 forwards,
+            dance 2s ease infinite;
+}
+
+@-webkit-keyframes anim {
+  0% { stroke-dashoffset: 2000px }
+  100% { stroke-dashoffset: 0 }
+}
+
+@keyframes anim {
+  0% { stroke-dashoffset: 2000px }
+  100% { stroke-dashoffset: 0 }
+}
+
+.fry path { -webkit-animation-delay:0s,2s,22s; animation-delay:0s,2s,22s }
+.bender path { -webkit-animation-delay:4s,6s,22s; animation-delay:4s,6s,22s }
+.leela path { -webkit-animation-delay:8s,12s,22s; animation-delay:8s,12s,22s }
+.zoidberg path { -webkit-animation-delay:12s,14s,22s; animation-delay:12s,14s,22s }
+.amy path { -webkit-animation-delay:18s,20s,22s; animation-delay:18s,20s,22s }
+
+.fry path { --charColor:#d27e41 }
+.bender path { --charColor:#6f6f6f }
+.leela path { --charColor:#80497f }
+.zoidberg path { --charColor:#bf2b28 }
+.amy path { --charColor:#d683ac }
+
+@-webkit-keyframes color {
+  0% { fill:transparent }
+  100% { fill:var(--charColor); }
+}
+
+@keyframes color {
+  0% { fill:transparent }
+  100% { fill:var(--charColor); }
+}
+
+@-webkit-keyframes dance {
+  25% { -webkit-transform:rotate(-10deg); transform:rotate(-10deg) }
+  0%, 50% { -webkit-transform:rotate(0); transform:rotate(0) }
+  75% { -webkit-transform:rotate(10deg); transform:rotate(10deg) }
+}
+
+@keyframes dance {
+  25% { -webkit-transform:rotate(-10deg); transform:rotate(-10deg) }
+  0%, 50% { -webkit-transform:rotate(0); transform:rotate(0) }
+  75% { -webkit-transform:rotate(10deg); transform:rotate(10deg) }
+}
+
+.ship {
+  position:absolute;
+  top:0px;
+  width:240px;
+  height:160px;
+  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/planet-express.png);
+  background-position:0 0;
+  -webkit-animation:ship .2s steps(3) infinite,
+            navigate 34s linear 1 forwards,
+            navigateback 1.5s linear 1 30s;
+          animation:ship .2s steps(3) infinite,
+            navigate 34s linear 1 forwards,
+            navigateback 1.5s linear 1 30s;
+  z-index:-3;
+}
+
+@-webkit-keyframes ship {
+  0% { background-position:0 0 }
+  100% { background-position:0 480px }
+}
+
+@keyframes ship {
+  0% { background-position:0 0 }
+  100% { background-position:0 480px }
+}
+
+@-webkit-keyframes navigate {
+  0% { -webkit-transform:translateX(-500px); transform:translateX(-500px) }
+  100% { -webkit-transform:translateX(150vw); transform:translateX(150vw) }
+}
+
+@keyframes navigate {
+  0% { -webkit-transform:translateX(-500px); transform:translateX(-500px) }
+  100% { -webkit-transform:translateX(150vw); transform:translateX(150vw) }
+}
+
+@-webkit-keyframes navigateback {
+  0% { -webkit-transform:translate(150vw, 150px) scale(-6, 6); transform:translate(150vw, 150px) scale(-6, 6); z-index:10 }
+  100% { -webkit-transform:translate(-1500px, 150px) scale(-6, 6); transform:translate(-1500px, 150px) scale(-6, 6); z-index:10 }
+}
+
+@keyframes navigateback {
+  0% { -webkit-transform:translate(150vw, 150px) scale(-6, 6); transform:translate(150vw, 150px) scale(-6, 6); z-index:10 }
+  100% { -webkit-transform:translate(-1500px, 150px) scale(-6, 6); transform:translate(-1500px, 150px) scale(-6, 6); z-index:10 }
+}
