@@ -34,8 +34,6 @@ Legend:
 * ⭐ Picked (Homepage) on CodePen
 * 🕹 Demo User-interactive
 
-
-
 # Author
 
 - [Emezeta.com](https://www.emezeta.com/)
