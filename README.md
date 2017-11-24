@@ -4,7 +4,7 @@
 
 Here, my 30 creative experiments:
 
-| Day | Theme | Links | Tecnologies used* | Music by | Flags |
+| Day | Theme | Links | Used technologies* | Music by | Flags |
 |-----|-------|--------------|-------------|-------------------|----------|
 | **Day 1** | 🌌 Galaxy | [Pen](https://codepen.io/manz/pen/KypYmz) / [GitHub](https://manzdev.github.io/codevember2017/day-1/) | JS, Canvas | 🎵 [Crig](https://soundcloud.com/crig-1) | |
 | **Day 2** | 🎂 Cake | [Pen](https://codepen.io/manz/pen/vWNrdE) / [GitHub](https://manzdev.github.io/codevember2017/day-2/) | SVG, Animations, Transforms | 🎵 [Michael Aker](https://soundcloud.com/michael-manotas)  | |
