@@ -9,13 +9,13 @@ var strength = 0;
 var firstStrength = 0;
 var currentMusic = false;
 var music = [new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/power-up-1.mp3'],
+  src: ['https://raw.githubusercontent.com/ManzDev/codevember2017/master/assets/power-up-1.ogg', 'https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/power-up-1.mp3'],
   onend: checkMusic.bind()
 }), new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/power-up-2.mp3'],
+  src: ['https://raw.githubusercontent.com/ManzDev/codevember2017/master/assets/power-up-2.ogg', 'https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/power-up-2.mp3'],
   onend: checkMusic.bind()
 }), new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/power-up-3.mp3'],
+  src: ['https://raw.githubusercontent.com/ManzDev/codevember2017/master/assets/power-up-3.ogg', 'https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/power-up-3.mp3'],
   onend: checkMusic.bind()
 })];
 
@@ -61,7 +61,7 @@ sword.onclick = function (e) {
   power.style.width = firstStrength + 'px';
   extrapower.style.width = strength + 'px';
 
-  if (e.detail > 10) {
+  if (e.detail > 1) {
     if (currentMusic < 1) firstStrength++;else strength = firstStrength + strength < 200 ? strength + 1 : strength + 0;
   }
 };
