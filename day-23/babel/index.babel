@@ -1,0 +1,42 @@
+let template = document.querySelector('.template');
+let soprano = document.querySelector('#soprano');
+let lines = document.querySelectorAll('.board .line');
+let elevator = document.querySelector('.elevator');
+let win = document.querySelector('.window');
+
+for (let i = 0; i < lines.length; i++)
+  for (let j = 0; j < [1,8,12][i]; j++)
+    lines[i].appendChild(template.content.cloneNode(true))
+
+lines[0].appendChild(soprano.content.cloneNode(true));
+lines[0].appendChild(template.content.cloneNode(true));
+
+for (let i = 0; i < 4; i++)
+  elevator.appendChild(template.content.cloneNode(true));
+
+let turrets = document.querySelectorAll('.turret');
+
+function updateTurrets(ini, rnd) {
+  for (let i = ini; i < turrets.length; i++)
+    if (~~(Math.random() * rnd) == 1) 
+      turrets[i].classList.toggle('open');
+}
+
+function sopranoSing() {
+  if (~~(Math.random() * 2) == 1) 
+    turrets[1].classList.toggle('open');  
+}
+
+let id = setInterval(function() {
+  updateTurrets(23, 2)
+}, 500);
+
+setTimeout(function() {
+  clearInterval(id);
+  setInterval(function() {
+    updateTurrets(0, 4);
+  }, 500);
+  setInterval(function() {
+    sopranoSing();
+  }, 250);
+}, 35000);
