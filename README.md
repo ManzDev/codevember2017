@@ -29,6 +29,7 @@ Here, my 30 creative experiments:
 | **Day 21** | 🥊 Fight | [Pen](https://codepen.io/manz/pen/vWRZGa) / [GitHub](https://manzdev.github.io/codevember2017/day-21/) | Animation, Emoji, JS, Howler.js | 🎵 [PeachyPixel8](https://soundcloud.com/peachypixel8/eye-of-the-tiger-8bit-demake) | ⭐ |
 | **Day 22** | 🌑 Planet | [Pen](https://codepen.io/manz/pen/eergPg) / [GitHub](https://manzdev.github.io/codevember2017/day-22/) | SVG, Animation | 🎵 [Plastiware](https://soundcloud.com/plastiware/futurama-crapcom-mix) | |
 | **Day 23** | 👑 King | [Pen](https://codepen.io/manz/pen/MOXWZy) / [GitHub](https://manzdev.github.io/codevember2017/day-23/) | SVG, Animation, JS | 🎵 [Valve](http://www.thinkwithportals.com/music.php) | |
+| **Day 24** | ❤️ Heart | [Pen](https://codepen.io/manz/pen/xPzepW) / [GitHub](https://manzdev.github.io/codevember2017/day-24/) | Animation, Emoji | 🎵 [Louis Armstrong](https://www.louisarmstronghouse.org/) | |
 
 <small>* HTML5 and CSS3 always used</small>
 
