@@ -89,7 +89,7 @@ html::before {
   position:absolute;
   top:calc(50vh - 54px);
   right:150px;
-  content:"🡸";
+  content:"🡄";
   font-family:'Press Start 2P';
   font-size:72px;
   color:#FFF;
@@ -113,12 +113,14 @@ html::before {
 }
 
 .think {
+  width:128px;
+  height:64px;
+  background:#FFF url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/heart-mouse.png) no-repeat center center;
+  background-size:128px 64px;  
   padding:20px;
-  font-size:32px;
   border-radius:20px;
-  background:#FFF;
   text-align:center;
-  position:relative;
+  position:absolute;
   left:-120px;
   top:-30px;
   
@@ -129,17 +131,13 @@ html::before {
             appears 4s ease 9s reverse 1 forwards;   
 }
 
-/* .faraway:hover .think {
-  animation:none;
-} */
-
 .think::before, .think::after {
   content:" ";
   display:block;
   position:absolute;
   z-index:2;
   top:85px;
-  right:-10px;
+  right:-28px;
   width:23px;
   height:23px;
   border-radius:25px;
@@ -148,7 +146,7 @@ html::before {
 
 .think::before {
   top:110px;
-  right:-20px;
+  right:-45px;
   width:15px;
   height:15px;
 }
@@ -163,8 +161,27 @@ html::before {
   100% { opacity:1 }
 }
 
+.box {
+    width: 512px;
+    height: 256px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+}
+
 .heart {
-  font-size:72px;
+/*   font-size:72px; */
+  width:128px;
+  height:128px;
+  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/heart-mouse.png) no-repeat;
+  background-size:256px 128px;
   opacity:0;
   -webkit-animation: appears .5s ease 1 3s forwards,
              beat linear infinite;
@@ -176,6 +193,10 @@ html::before {
   transition: all 0.1s linear;
   -webkit-filter:grayscale(1);
           filter:grayscale(1);
+  -webkit-user-select:none;
+     -moz-user-select:none;
+      -ms-user-select:none;
+          user-select:none;
 }
 
 @-webkit-keyframes beat {
