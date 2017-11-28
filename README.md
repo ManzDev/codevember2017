@@ -33,6 +33,7 @@ Here, my 30 creative experiments:
 | **Day 25** | 🥑 Avocado | [Pen](https://codepen.io/manz/pen/QOBbKg) / [GitHub](https://manzdev.github.io/codevember2017/day-25/) | SVG, Animation, JS | 🎵 [Tom Da Lips](https://soundcloud.com/tomdalips/tom-da-lips-avocado-free-download) | ⭐ |
 | **Day 26** | 🗻 Mountain | [Pen](https://codepen.io/manz/pen/MOBVod) / [GitHub](https://manzdev.github.io/codevember2017/day-26/) | Animation | 🎵 [Radix](https://soundcloud.com/a-chiptune-a-day/weather-girl) | ⭐ |
 | **Day 27** | 🍺 Beer | [Pen](https://codepen.io/manz/pen/vWzZNG) / [GitHub](https://manzdev.github.io/codevember2017/day-27/) | Animation, Blend modes, JS | 🎵 [Rainbowdragoneyes](https://soundcloud.com/rainbowdragoneyes/sakkijarven-polka) | ⭐ |
+| **Day 28** | 🖊️ Pen | [Pen](https://codepen.io/manz/pen/VrEYWr) / [GitHub](https://manzdev.github.io/codevember2017/day-28/) | Animation | 🎵 [Toby Fox/Bulby](https://www.patreon.com/Bulby) | |
 
 <small>* HTML5 and CSS3 always used</small>
 
