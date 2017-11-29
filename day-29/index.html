@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>#codevember - Day 29: Giraffe</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <template id="cloud">
+  <svg viewBox="0 0 350 350">
+    <path d="M199.506 10.342a64.145 64.145 0 0 0-59.113 39.254 64.145 64.145 0 0 0-26.75-5.918 64.145 64.145 0 0 0-59.758 41.017C29.07 92.25 11.11 115.245 11.11 142.594v5.496c0 33.534 26.998 60.531 60.532 60.531h198.146c23.227 0 43.31-12.958 53.465-32.062a64.145 64.145 0 0 0 16.158-42.473 64.145 64.145 0 0 0-64.146-64.145 64.145 64.145 0 0 0-11.739 1.121 64.145 64.145 0 0 0-64.021-60.72z"/>
+  </svg>  
+</template>
+
+<div class="sky"></div>
+
+<div class="place chew">
+  <svg class="giraffe" viewBox="10 10 92 155">
+    <rect class="neck" width="27" height="80" x="44" y="100" ry="0.015" fill="#ffec4e" />  
+    <path class="grass" d="M63.46 101.492l-.568 9.359 2.41-4.538 1.844 7.374 1.56-8.366 2.694 8.791.993-8.791 4.254 5.388-4.68-14.038L61.9 99.08l1.56 2.41z"/>
+    <g class="ear">
+        <path fill="#ffec4e" d="M66 44c-1 1 9 13 10 14 1 2 11 14 13 13 2 0 7-14 7-16 1-2 7-16 6-17-2-2-17 1-19 1-1 1-16 3-17 5z"/>
+        <path fill="#ffc7cc" d="M67 48c-1 1 7 10 8 11 1 2 8 11 10 11s6-12 6-13c1-2 5-13 4-14s-13 1-14 1c-2 1-14 2-14 4z"/>
+    </g>
+    <g class="ear">
+        <path fill="#ffec4e" d="M51 44L40 58c-1 2-10 14-12 13-2 0-7-14-8-16 0-2-6-16-5-17 1-2 16 1 18 1 2 1 17 3 18 5z"/>
+        <path fill="#ffc7cc" d="M50 48l-9 11-9 11c-2 0-6-12-7-13 0-2-5-13-4-14s13 1 15 1c1 1 13 2 14 4z"/>
+    </g>
+    <circle class="head" cx="58" cy="69" r="34" fill="#ffec4e"/>
+    <path class="tops" fill="#492d13" d="M85 79a8 8 0 0 0-8 8 8 8 0 0 0 5 7 34 34 0 0 0 8-13 8 8 0 0 0-5-2zm-51 3a8 8 0 0 0-6 3 34 34 0 0 0 9 12 8 8 0 0 0 5-7 8 8 0 0 0-8-8zm48-37a10 10 0 0 0-8 9 10 10 0 0 0 10 10 10 10 0 0 0 8-4 34 34 0 0 0-10-15zm-51 5a11 11 0 0 0-2 1 34 34 0 0 0-6 17 11 11 0 0 0 8 4 11 11 0 0 0 11-10 11 11 0 0 0-10-12 11 11 0 0 0-1 0z"/>
+    <path fill="#ffd54e" d="M44 42V25l6-1 4 17z"/>
+    <circle cx="46" cy="22" r="7" fill="#ac5508"/>
+    <path fill="#ffd54e" d="M72 41V24h-6l-4 16z"/>
+    <circle cx="70" cy="21" r="7" fill="#c06e29"/>
+    <g class="eye">
+        <circle cx="48" cy="59" r="9" fill="#fff"/>
+        <circle cx="48" cy="59" r="7" fill="#905700"/>
+        <circle cx="48" cy="60" r="5"/>
+        <circle cx="44" cy="56" r="4" fill="#fff" opacity=".9"/>
+    </g>
+    <g class="eye">
+        <circle cx="68" cy="59" r="9" fill="#fff"/>
+        <circle cx="68" cy="59" r="7" fill="#905700"/>
+        <circle cx="68" cy="60" r="5"/>
+        <circle cx="72" cy="56" r="4" fill="#fff" opacity=".9"/>
+    </g>
+    <g class="nose">
+      <ellipse cx="58" cy="91" fill="#ffffb0" rx="22" ry="15"/>
+      <g fill="#ff9a4d">
+          <circle cx="53" cy="91" r="3"/>
+          <circle cx="63" cy="91" r="3"/>
+      </g>
+    </g>
+  </svg>
+</div>
+
+<div class="tree">
+  <svg viewBox="0 0 103 126">
+      <path fill="#804300" d="M48 50v27l-15-9-32 3 33 1 14 10v44h15V50z"/>
+      <path fill="#050" d="M61 0a16 16 0 0 0-13 7 16 16 0 0 0-12-6 16 16 0 0 0-17 16 16 16 0 0 0 3 8A16 16 0 0 0 9 41a16 16 0 0 0 16 16 16 16 0 0 0 2 0 16 16 0 0 0 15 12 16 16 0 0 0 12-6 16 16 0 0 0 12 5 16 16 0 0 0 16-16 16 16 0 0 0 5 1 16 16 0 0 0 16-16 16 16 0 0 0-11-16A16 16 0 0 0 76 6a16 16 0 0 0-2 1 16 16 0 0 0-13-7zM12 61a7 6 0 0 0-6 3 7 6 0 0 0-6 6 7 6 0 0 0 7 6 7 6 0 0 0 3-1 7 6 0 0 0 5 3 7 6 0 0 0 7-6 7 6 0 0 0-3-5 7 6 0 0 0-7-6z"/>
+  </svg>  
+</div>
+
+<div class="data">
+  <h1>Giraffe</h1>
+  <h2>#Codevember</h2>
+  <a class="ghost" href="https://twitter.com/Manz" target="_blank">Code by Manz</a>
+  <a class="ghost" href="https://soundcloud.com/kubbi/polarity-teslagrad-ost-remix" target="_blank">Music by Kubbi</a>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.5/howler.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>

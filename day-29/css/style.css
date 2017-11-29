@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,800');
+
+.sky svg {
+  width:200px;
+  fill:#CCC;
+}
+
+.sky .cloud {
+  position:absolute;
+  -webkit-animation:cloudmove 30s linear infinite;
+          animation:cloudmove 30s linear infinite;
+}
+
+@-webkit-keyframes cloudmove {
+  0% { -webkit-transform:translateX(-200px); transform:translateX(-200px) }
+  100% { -webkit-transform:translateX(100vw); transform:translateX(100vw) } 
+}
+
+@keyframes cloudmove {
+  0% { -webkit-transform:translateX(-200px); transform:translateX(-200px) }
+  100% { -webkit-transform:translateX(100vw); transform:translateX(100vw) } 
+}
+
+.data {
+  position:absolute;
+  bottom:280px;
+  left:calc(50vw + 90px);
+  z-index:2;
+  text-align:center;
+  width:400px;
+  margin:auto;
+  padding:20px;
+  opacity:1;
+}
+
+
+h1, h2, .ghost {
+  font-family:Montserrat;
+  font-weight:600;  
+  margin:0;
+}
+  
+h1 {
+  font-weight:800;
+  letter-spacing:-2px;
+  font-size:64px;
+  color:#111;
+}
+
+h2 {
+  font-size:24px;
+  color:#FFF;
+}
+
+.ghost {
+  font-weight:400;
+  font-size:15px;
+  color:#FFF;
+  display:inline-block;
+  margin:8px 2px;
+  padding:8px;
+  border:1px solid #111;
+  text-decoration:none;
+}
+
+a.ghost:hover {
+  -webkit-transition:all .5s linear;
+  transition:all .5s linear;
+  background:#111;
+  border-color:#111;
+  color:#FFF;
+}
+
+body {
+  background:steelblue;
+  overflow:hidden;
+}
+
+.place {
+  position:absolute;
+  bottom:0;
+  left:calc(50vw - 150px);
+}
+
+.giraffe {
+  display:block;
+  width:300px;
+  margin:auto;
+}
+
+.chew .nose {
+  -webkit-animation:chew 1s linear infinite;
+          animation:chew 1s linear infinite;
+}
+
+@-webkit-keyframes chew {
+  0%, 100% { -webkit-transform: translate(0, 0); transform: translate(0, 0) }
+  25% { -webkit-transform: translate(.5px, 1px); transform: translate(.5px, 1px) }
+  75% { -webkit-transform: translate(-.5px, 1px); transform: translate(-.5px, 1px) }
+}
+
+@keyframes chew {
+  0%, 100% { -webkit-transform: translate(0, 0); transform: translate(0, 0) }
+  25% { -webkit-transform: translate(.5px, 1px); transform: translate(.5px, 1px) }
+  75% { -webkit-transform: translate(-.5px, 1px); transform: translate(-.5px, 1px) }
+}
+
+.grass {
+  fill:#050;  
+}
+
+.chew .grass {
+  -webkit-animation:chew 1s linear reverse infinite,
+            semiappears 3s linear 1 1s reverse forwards;
+          animation:chew 1s linear reverse infinite,
+            semiappears 3s linear 1 1s reverse forwards;
+}
+
+.place.up .grass {
+  -webkit-animation:down 3s linear 1 forwards;
+          animation:down 3s linear 1 forwards;
+}
+
+.giraffe {
+  -webkit-transform:translateY(100px);
+          transform:translateY(100px);  
+}
+
+.up .giraffe {
+  -webkit-animation:neckanim 4s linear 1 forwards;
+          animation:neckanim 4s linear 1 forwards;
+}
+
+@-webkit-keyframes neckanim {
+  0%, 100% { -webkit-transform:translateY(100px); transform:translateY(100px) }
+  40%, 60% { -webkit-transform:translateY(0); transform:translateY(0) }
+}
+
+@keyframes neckanim {
+  0%, 100% { -webkit-transform:translateY(100px); transform:translateY(100px) }
+  40%, 60% { -webkit-transform:translateY(0); transform:translateY(0) }
+}
+
+@-webkit-keyframes semiappears {
+  0%, 50% { -webkit-transform:translateY(-15px); transform:translateY(-15px) }
+  100% { -webkit-transform:translateY(0); transform:translateY(0) }
+}
+
+@keyframes semiappears {
+  0%, 50% { -webkit-transform:translateY(-15px); transform:translateY(-15px) }
+  100% { -webkit-transform:translateY(0); transform:translateY(0) }
+}
+
+@-webkit-keyframes down {
+  0%, 70% { -webkit-transform:translateY(-15px); transform:translateY(-15px) }
+  75%, 100% { -webkit-transform:translateY(0); transform:translateY(0) }
+}
+
+@keyframes down {
+  0%, 70% { -webkit-transform:translateY(-15px); transform:translateY(-15px) }
+  75%, 100% { -webkit-transform:translateY(0); transform:translateY(0) }
+}
+
+.off {
+  display:none;
+}
+
+.tree svg {
+  width:500px;
+  position:absolute;
+  bottom:-70px;
+  left:calc(50vw + 50px)
+}
