@@ -1,0 +1,255 @@
+html {
+  height:100vh;
+  overflow:hidden;
+  background:#000;
+}
+
+body {
+  margin:0;
+}
+
+a { text-decoration:none }
+
+.sky {
+  background:-webkit-linear-gradient(bottom, #c8f8f8, #a3e4ed);
+  background:linear-gradient(to top, #c8f8f8, #a3e4ed);
+  height:100vh;
+}
+
+.back {
+  width:100%;
+  height:250px;
+  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/background.png?5) center repeat-x;
+  position:absolute;
+  bottom:0;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+/*   align-items:flex-end; */
+}
+
+.podium {
+  width:313px;
+  height:93px;
+  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/podium.png);
+  position:absolute;
+  bottom:15px;
+}
+
+.shadow {
+  width:186px;
+  height:32px;
+  background:RGBA(0,0,0, .25);
+  border-radius:50%;
+  position:absolute;
+  bottom:100px;
+  
+  -webkit-animation:movefish 5s linear 1 forwards,
+             enlarge .25s linear 6 alternate forwards 6s,
+            movefish2 5s linear 1 10s forwards;
+  
+          animation:movefish 5s linear 1 forwards,
+             enlarge .25s linear 6 alternate forwards 6s,
+            movefish2 5s linear 1 10s forwards;
+}
+
+.fish {
+  width:186px;
+  height:190px;
+  background:url(https://raw.githubusercontent.com/ManzDev/codevember2017/master/assets/fish.png?5);
+  
+  position:absolute;
+  bottom:250px;
+/*   top:50px; */
+  right:-190px;
+  -webkit-animation:movefish 5s linear 1 forwards,
+             enlarge .25s linear 6 alternate forwards 6s,
+            movefish2 5s linear 1 10s forwards;
+          animation:movefish 5s linear 1 forwards,
+             enlarge .25s linear 6 alternate forwards 6s,
+            movefish2 5s linear 1 10s forwards;
+  z-index:10;
+}
+
+@-webkit-keyframes enlarge {
+  0% { -webkit-transform:scale(1); transform:scale(1) }
+  100% { -webkit-transform:scale(1.2); transform:scale(1.2) }
+}
+
+@keyframes enlarge {
+  0% { -webkit-transform:scale(1); transform:scale(1) }
+  100% { -webkit-transform:scale(1.2); transform:scale(1.2) }
+}
+
+@-webkit-keyframes movefish {
+  0% { right:-190px }
+  100% { right:calc(50vw - 90px) }
+}
+
+@keyframes movefish {
+  0% { right:-190px }
+  100% { right:calc(50vw - 90px) }
+}
+
+@-webkit-keyframes movefish2 {
+  0% { right:calc(50vw - 90px) }
+  100% { right:calc(100vw + 200px) }
+}
+
+@keyframes movefish2 {
+  0% { right:calc(50vw - 90px) }
+  100% { right:calc(100vw + 200px) }
+}
+
+.cup {
+  width:33px;
+  height:51px;
+  background:url(https://raw.githubusercontent.com/ManzDev/codevember2017/master/assets/cup.png) no-repeat;
+  position:absolute;
+  left: calc(50vw - 30px);
+  opacity:0;
+  -webkit-animation:dropcup 2.5s linear 1 7s forwards;
+          animation:dropcup 2.5s linear 1 7s forwards;
+}
+
+@-webkit-keyframes dropcup {
+  0%, 15% { top:-180px }
+  30% { top:-300px }
+  50% { top:12px }
+  55% { top:-4px }
+  70%, 80%, 90%, 100% { top:200px }
+  75%, 85% { top:180px }
+  0%, 100% { opacity: 1 }
+  0%, 19% { z-index:0 }
+  20%, 100% { z-index:15 }
+}
+
+@keyframes dropcup {
+  0%, 15% { top:-180px }
+  30% { top:-300px }
+  50% { top:12px }
+  55% { top:-4px }
+  70%, 80%, 90%, 100% { top:200px }
+  75%, 85% { top:180px }
+  0%, 100% { opacity: 1 }
+  0%, 19% { z-index:0 }
+  20%, 100% { z-index:15 }
+}
+
+.codepen, .zebra, .rockguy {
+  width:128px;
+  height:128px;
+  position:relative;
+  bottom:-35px;
+  background:url(https://raw.githubusercontent.com/ManzDev/codevember2017/master/assets/chars.png);
+  background-size:256px 512px;
+  z-index:15;
+}
+
+.codepen {
+  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/codepen-guy.png?2);
+  background-size:128px 256px;
+  width:128px;
+  height:128px;
+  position: relative;
+  top: 50px;
+  left: 14px;  
+}
+
+.codepen { 
+  -webkit-animation: movecp .5s steps(2) 10s infinite; 
+          animation: movecp .5s steps(2) 10s infinite 
+}
+
+@-webkit-keyframes movecp {
+  0% { background-position:0 0 }
+  100% { background-position:0 256px }
+}
+
+@keyframes movecp {
+  0% { background-position:0 0 }
+  100% { background-position:0 256px }
+}
+
+.zebra { 
+  background-position: 128px 0;
+  bottom:-70px;
+  left:5px;
+}
+.rockguy { 
+  background-position: 0 386px;
+  left:-10px;  
+}
+
+.emoji { 
+  width:128px;
+  height:128px;
+  position:relative;
+  bottom: -100px;
+  left: -30px;
+  font-size:64px;
+}
+
+.emoji::after {
+  content:"🥊🥊";
+  display:block;
+  font-size:32px;
+  -webkit-transform:rotate(180deg);
+          transform:rotate(180deg);
+  position:relative;
+  left:-44px;
+  top:-20px;
+}
+
+.zebra, .rockguy, .emoji {
+  -webkit-animation: movechars .25s steps(2) 10s alternate infinite;
+          animation: movechars .25s steps(2) 10s alternate infinite;
+}
+.rockguy { -webkit-animation-delay:10.25s; animation-delay:10.25s }
+.zebra { -webkit-animation-delay:10.5s; animation-delay:10.5s }
+
+#codepen-box {
+  width: 38px;
+  height: 38px;
+  position: relative;
+  top: 50px;
+  display: block;
+  left: 125px;
+}
+
+@-webkit-keyframes movechars {
+  0% { -webkit-transform:translateY(0); transform:translateY(0) }
+  100% { -webkit-transform:translateY(-5px); transform:translateY(-5px) }
+}
+
+@keyframes movechars {
+  0% { -webkit-transform:translateY(0); transform:translateY(0) }
+  100% { -webkit-transform:translateY(-5px); transform:translateY(-5px) }
+}
+
+.codevember {
+  background: url(https://github.com/ManzDev/codevember2017/raw/master/codevember-logo.gif);
+  width: 390px;
+  height: 69px;
+  mix-blend-mode: darken;
+  margin: auto;
+  position: relative;
+  top: 70px;
+  -webkit-animation: movetitle 2s ease 1 forwards 16s;
+          animation: movetitle 2s ease 1 forwards 16s;
+  opacity:0;
+  z-index:20;
+}
+
+@-webkit-keyframes movetitle {
+  0% { -webkit-transform:scale(0); transform:scale(0); opacity:1 }
+  100% { -webkit-transform:scale(1); transform:scale(1); opacity:1 }
+}
+
+@keyframes movetitle {
+  0% { -webkit-transform:scale(0); transform:scale(0); opacity:1 }
+  100% { -webkit-transform:scale(1); transform:scale(1); opacity:1 }
+}

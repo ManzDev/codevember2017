@@ -34,8 +34,9 @@ Here, my 30 creative experiments:
 | **Day 26** | 🗻 Mountain | [Pen](https://codepen.io/manz/pen/MOBVod) / [GitHub](https://manzdev.github.io/codevember2017/day-26/) | Animation | 🎵 [Radix](https://soundcloud.com/a-chiptune-a-day/weather-girl) | ⭐ |
 | **Day 27** | 🍺 Beer | [Pen](https://codepen.io/manz/pen/vWzZNG) / [GitHub](https://manzdev.github.io/codevember2017/day-27/) | Animation, Blend modes, JS | 🎵 [Rainbowdragoneyes](https://soundcloud.com/rainbowdragoneyes/sakkijarven-polka) | ⭐ |
 | **Day 28** | 🖊️ Pen | [Pen](https://codepen.io/manz/pen/VrEYWr) / [GitHub](https://manzdev.github.io/codevember2017/day-28/) | Animation | 🎵 [Toby Fox/Bulby](https://www.patreon.com/Bulby) | ⭐ |
-| **Day 29** | 🦒 Giraffe | [Pen](https://codepen.io/manz/pen/jaQOjp) / [GitHub](https://manzdev.github.io/codevember2017/day-29/) | SVG, Animation, JS | 🎵 [Kubbi](https://soundcloud.com/kubbi/polarity-teslagrad-ost-remix) | |
-| **Day 30** | 🌟 Supernova | [Pen](https://codepen.io/manz/pen/BmGdbG) / [GibHub](https://manzdev.github.io/codevember2017/day-30/) | Animation, JS, Canvas | 🎵 [Kenneth Moller](https://soundcloud.com/kenneth-moller/maniac-mansion-intro-nes) | | 
+| **Day 29** | 🦒 Giraffe | [Pen](https://codepen.io/manz/pen/jaQOjp) / [GitHub](https://manzdev.github.io/codevember2017/day-29/) | SVG, Animation, JS, Howler.js | 🎵 [Kubbi](https://soundcloud.com/kubbi/polarity-teslagrad-ost-remix) | |
+| **Day 30** | 🌟 Supernova | [Pen](https://codepen.io/manz/pen/BmGdbG) / [GitHub](https://manzdev.github.io/codevember2017/day-30/) | Animation, JS, Canvas, Howler.js | 🎵 [Kenneth Moller](https://soundcloud.com/kenneth-moller/maniac-mansion-intro-nes) | ⭐ |
+| **Extra** | 🏆 Finish | [Pen](https://codepen.io/manz/pen/KyBWvV) / [GitHub](https://manzdev.github.io/codevember2017/extra-day/) | Animation, JS, Howler.js | 🎵 [Nintendo](https://www.youtube.com/watch?v=82zPmhGoOt8) | |
 
 <small>* HTML5 and CSS3 always used</small>
 
