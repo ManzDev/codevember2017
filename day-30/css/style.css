@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Press+Start+2P');
+
+html {
+  background:#000;
+  overflow:hidden;
+}
+
+body {
+  margin:0;
+}
+
+.data {
+  position:absolute;
+  z-index:1;
+  text-align:center;
+  top:calc(100vh / 3);
+  left:calc(100vw / 3);
+  opacity:0;
+  -webkit-animation: appears 2s ease 8s 1 forwards,
+             appears 2s ease 16s reverse 1 forwards;
+          animation: appears 2s ease 8s 1 forwards,
+             appears 2s ease 16s reverse 1 forwards;
+}
+
+.credits {
+  position: absolute;
+  top: calc(100vh / 4);
+  left: calc(100vw / 4);
+  width: calc(50vw);
+  color: #FFF;
+  font-family: 'Press Start 2P';
+  font-size: 16px!important;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(255,255,255,.75);
+  line-height: 300%;
+  z-index: 25;  
+}
+
+.credits div { 
+  text-align:center;
+  opacity:0;
+  -webkit-animation: appears 1s ease 1 forwards;
+          animation: appears 1s ease 1 forwards;
+}
+.credits div:nth-child(1) { -webkit-animation-delay: 18s; animation-delay: 18s }
+.credits div:nth-child(2) { -webkit-animation-delay: 21s; animation-delay: 21s }
+.credits div:nth-child(3) { -webkit-animation-delay: 24s; animation-delay: 24s }
+.credits div:nth-child(4) { -webkit-animation-delay: 28s; animation-delay: 28s }
+
+@-webkit-keyframes appears {
+  0% { opacity:0 }
+  100% { opacity:1 }
+}
+
+@keyframes appears {
+  0% { opacity:0 }
+  100% { opacity:1 }
+}
+
+h1, h2, .ghost {
+  font-family:Montserrat;
+  font-weight:400;  
+  margin:20px;
+}
+  
+h1 {
+  font-family:'Press Start 2P';
+  font-weight:600;
+  font-size:64px;
+  color:#444;
+}
+
+h2 {
+  font-family:'Press Start 2P';
+  font-size:24px;
+  color:#FFF;
+}
+
+.ghost {
+  font-weight:400;
+  font-size:15px;
+  color:#CCC;
+  display:inline-block;
+  margin:8px 2px;
+  padding:8px;
+  border:1px solid #CCC;
+  text-decoration:none;
+}
+
+a.ghost:hover {
+  -webkit-transition:all .5s linear;
+  transition:all .5s linear;
+  background:rgba(50,50,50, .2);
+  border-color:#f2ea00;
+  color:#f2ea00;
+}
+
+#screen {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+}
+
+.char {
+  width:256px;
+  height:256px;
+  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/chars.png);
+  -webkit-filter:drop-shadow(0 0 10px #FFF);
+          filter:drop-shadow(0 0 10px #FFF);
+  background-position:0px 256px;
+  -webkit-animation:movechar 15s ease 12s 1 forwards;
+          animation:movechar 15s ease 12s 1 forwards;
+  -webkit-transform-origin:50% 50%;
+          transform-origin:50% 50%;
+  position:absolute;
+  left:50vw;
+  top:-30vh;
+  -webkit-transform:translate(180vw, 30vh) rotate(0);
+          transform:translate(180vw, 30vh) rotate(0);
+}
+
+@-webkit-keyframes movechar {
+  0% { -webkit-transform:translate(180vw, 30vh) rotate(0); transform:translate(180vw, 30vh) rotate(0) }
+  100% { -webkit-transform:translate(-100vw, 60vh) rotate(-1360deg); transform:translate(-100vw, 60vh) rotate(-1360deg) }
+}
+
+@keyframes movechar {
+  0% { -webkit-transform:translate(180vw, 30vh) rotate(0); transform:translate(180vw, 30vh) rotate(0) }
+  100% { -webkit-transform:translate(-100vw, 60vh) rotate(-1360deg); transform:translate(-100vw, 60vh) rotate(-1360deg) }
+}
+
+a { color:cyan }

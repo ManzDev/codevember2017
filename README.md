@@ -35,6 +35,7 @@ Here, my 30 creative experiments:
 | **Day 27** | 🍺 Beer | [Pen](https://codepen.io/manz/pen/vWzZNG) / [GitHub](https://manzdev.github.io/codevember2017/day-27/) | Animation, Blend modes, JS | 🎵 [Rainbowdragoneyes](https://soundcloud.com/rainbowdragoneyes/sakkijarven-polka) | ⭐ |
 | **Day 28** | 🖊️ Pen | [Pen](https://codepen.io/manz/pen/VrEYWr) / [GitHub](https://manzdev.github.io/codevember2017/day-28/) | Animation | 🎵 [Toby Fox/Bulby](https://www.patreon.com/Bulby) | ⭐ |
 | **Day 29** | 🦒 Giraffe | [Pen](https://codepen.io/manz/pen/jaQOjp) / [GitHub](https://manzdev.github.io/codevember2017/day-29/) | SVG, Animation, JS | 🎵 [Kubbi](https://soundcloud.com/kubbi/polarity-teslagrad-ost-remix) | |
+| **Day 30** | 🌟 Supernova | [Pen](https://codepen.io/manz/pen/BmGdbG) / [GibHub](https://manzdev.github.io/codevember2017/day-30/) | Animation, JS, Canvas | 🎵 [Kenneth Moller](https://soundcloud.com/kenneth-moller/maniac-mansion-intro-nes) | | 
 
 <small>* HTML5 and CSS3 always used</small>
 
