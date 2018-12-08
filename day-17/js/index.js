@@ -13,7 +13,7 @@ var music2 = new Howl({
 });
 
 var music = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/playing-power.mp3?3'],
+  src: ['https://cdn.jsdelivr.net/gh/ManzDev/codevember2017/assets/playing-power.mp3?3'],
   onend: function onend() {
     if (player.turbo) music2.play();else this.play();
   }

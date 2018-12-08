@@ -19,7 +19,7 @@ a { text-decoration:none }
 .back {
   width:100%;
   height:250px;
-  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/background.png?5) center repeat-x;
+  background:url(https://cdn.jsdelivr.net/gh/ManzDev/codevember2017/assets/background.png?5) center repeat-x;
   position:absolute;
   bottom:0;
   display:-webkit-box;
@@ -150,7 +150,7 @@ a { text-decoration:none }
 }
 
 .codepen {
-  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/codepen-guy.png?2);
+  background:url(https://cdn.jsdelivr.net/gh/ManzDev/codevember2017/assets/codepen-guy.png?2);
   background-size:128px 256px;
   width:128px;
   height:128px;

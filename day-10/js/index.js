@@ -10,7 +10,7 @@ let idata = ctx.createImageData(canvas.width, canvas.height);
 let buffer32 = new Uint32Array(idata.data.buffer);
 
 let tape = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/tape-play.mp3?1']
+  src: ['https://cdn.jsdelivr.net/gh/ManzDev/codevember2017/assets/tape-play.mp3?1']
 });
 
 //let cursors = [];
