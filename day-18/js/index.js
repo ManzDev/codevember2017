@@ -6,7 +6,7 @@ var motor = new Howl({
 });
 
 var startmotor = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/start-motor.mp3?4']
+  src: ['https://cdn.jsdelivr.net/gh/ManzDev/codevember2017/assets/start-motor.mp3?4']
 });
 
 setTimeout(function () {

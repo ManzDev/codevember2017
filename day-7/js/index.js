@@ -7,10 +7,10 @@ var phase = 0;
 var daysWeek = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun', 'monreboot'];
 var currentMusic = 0;
 var music = [new Howl({
-  src: ['https://rawgit.com/ManzDev/codevember2017/master/assets/skogens-djur-1.mp3?1'],
+  src: ['https://cdn.jsdelivr.net/gh/ManzDev/codevember2017/assets/skogens-djur-1.mp3?1'],
   onend: checkMusic.bind()
 }), new Howl({
-  src: ['https://rawgit.com/ManzDev/codevember2017/master/assets/skogens-djur-2.mp3?1'],
+  src: ['https://cdn.jsdelivr.net/gh/ManzDev/codevember2017/assets/skogens-djur-2.mp3?1'],
   onend: checkMusic.bind()
 })];
 
