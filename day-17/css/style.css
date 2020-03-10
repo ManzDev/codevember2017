@@ -2,9 +2,9 @@
 
 @font-face {
   font-family: 'Segment7';
-  src: url('https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/segment7.woff2'),
-       url('https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/segment7.woff'),
-       url('https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/segment7.ttf');    
+  src: url('https://manzdev.github.io/codevember2017/assets/segment7.woff2'),
+       url('https://manzdev.github.io/codevember2017/assets/segment7.woff'),
+       url('https://manzdev.github.io/codevember2017/assets/segment7.ttf');
 }
 
 html {
@@ -15,15 +15,15 @@ html {
 .data {
   position:relative;
   z-index:1;
-  text-align:center;  
+  text-align:center;
 }
 
 h1, h2, .ghost {
   font-family:Montserrat;
-  font-weight:600;  
+  font-weight:600;
   margin:0;
 }
-  
+
 h1 {
   font-weight:400;
   letter-spacing:-2px;
@@ -71,7 +71,7 @@ a.ghost:hover {
   font-size:122px;
   width:225px;
   text-align:right;
-  
+
   position:absolute;
   top:10px;
   right:25px;
@@ -111,7 +111,7 @@ a.ghost:hover {
   top:200px;
   right:75px;
   -webkit-animation:blink 1s steps(2) infinite;
-          animation:blink 1s steps(2) infinite;  
+          animation:blink 1s steps(2) infinite;
 }
 
 .key.press { -webkit-animation:press 1s linear infinite alternate; animation:press 1s linear infinite alternate }
@@ -153,7 +153,7 @@ a.ghost:hover {
   top:-100px;
   width:128px;
   height:128px;
-  background-image:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/snail-pixel.png);
+  background-image:url(https://manzdev.github.io/codevember2017/assets/snail-pixel.png);
   background-position:0 0;
   z-index:8;
 }
@@ -179,7 +179,7 @@ a.ghost:hover {
 
 .snail.winner::after {
     content: " ";
-    background: url(https://raw.githubusercontent.com/ManzDev/codevember2017/master/assets/diamond.png);
+    background: url(https://manzdev.github.io/codevember2017/assets/diamond.png);
     height: 64px;
     width: 64px;
     /* background: #FFF; */

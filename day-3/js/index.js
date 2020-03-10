@@ -14,22 +14,22 @@ function unsetText(elem, e) {
 }
 
 function pop(elem, e) {
-  let num = Number(elem.dataset.num);  
+  let num = Number(elem.dataset.num);
   bubble.currentTime = 0;
   bubble.play();
-  
+
   elem.style.display = 'none';
 }
 
 // Prepare
-let bubble = new Audio('https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/bubble.mp3');
+let bubble = new Audio('https://manzdev.github.io/codevember2017/assets/bubble.mp3');
 let stack = [];
 for (let i = 0; i < 100; i++) {
 
   let folder = document.createElement('img');
   folder.dataset.num = i;
   folder.className = 'folder';
-  folder.src = 'https://i.imgsafe.org/ba/babb752732.png';
+  folder.src = 'https://manzdev.github.io/codevember2017/assets/folder.png';
   folder.style.left = ~~(Math.random() * innerWidth) + 'px';
   folder.style.top = ~~(Math.random() * innerHeight) + 'px';
   folder.onmouseover = setText.bind(event, folder);
@@ -40,8 +40,8 @@ for (let i = 0; i < 100; i++) {
 
 }
 
-let words = ['System32', 'Windows', 'Program Files', 'Fonts', 'Images', 
-             'Assets', 'My music', 'Updates', 'Temp', 'Boot', 
+let words = ['System32', 'Windows', 'Program Files', 'Fonts', 'Images',
+             'Assets', 'My music', 'Updates', 'Temp', 'Boot',
              'etc', 'User', 'My documents', 'p0rn', 'Holiday photos', 'dev',
              'Summer 99', 'AC-DC', 'Mike Oldfield', 'Europe', 'Imagine Dragons',
              'Pimpinela', 'iTunes', 'aTunes', 'Logs', 'Config.msi', 'opt',

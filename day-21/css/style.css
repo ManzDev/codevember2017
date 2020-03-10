@@ -34,10 +34,10 @@ html {
 
 h1, h2, .ghost {
   font-family:Montserrat;
-  font-weight:600;  
+  font-weight:600;
   margin:0;
 }
-  
+
 h1 {
   font-family:'Stardos Stencil';
   font-weight:700;
@@ -141,7 +141,7 @@ a.ghost:hover {
   left:calc(50vw - 400px);
   width:800px;
   height:600px;
-  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/ring-boxing.png);
+  background:url(https://manzdev.github.io/codevember2017/assets/ring-boxing.png);
 }
 
 .jump { -webkit-animation:jump .5s linear infinite forwards; animation:jump .5s linear infinite forwards }
@@ -149,13 +149,13 @@ a.ghost:hover {
 @-webkit-keyframes jump {
   0% { -webkit-transform:translateY(0); transform:translateY(0) }
   40% , 60% { -webkit-transform:translateY(-6px); transform:translateY(-6px) }
-  100% { -webkit-transform:translateY(0); transform:translateY(0) }  
+  100% { -webkit-transform:translateY(0); transform:translateY(0) }
 }
 
 @keyframes jump {
   0% { -webkit-transform:translateY(0); transform:translateY(0) }
   40% , 60% { -webkit-transform:translateY(-6px); transform:translateY(-6px) }
-  100% { -webkit-transform:translateY(0); transform:translateY(0) }  
+  100% { -webkit-transform:translateY(0); transform:translateY(0) }
 }
 
 .player1, .player2 {
@@ -167,10 +167,10 @@ a.ghost:hover {
 
 .player.move {
   -webkit-animation:moveplayer 1s ease 0s infinite;
-          animation:moveplayer 1s ease 0s infinite;  
+          animation:moveplayer 1s ease 0s infinite;
 }
 
-.player2 { 
+.player2 {
   left:400px;
 }
 

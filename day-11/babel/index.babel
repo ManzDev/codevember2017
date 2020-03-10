@@ -4,7 +4,7 @@ canvas.width = innerWidth * 2;
 canvas.height = innerHeight;
 
 let music = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/tron-by-mcklain.mp3?1']
+  src: ['https://manzdev.github.io/codevember2017/assets/tron-by-mcklain.mp3?1']
 }).play();
 
 let gridY = {
@@ -22,7 +22,7 @@ let gridY = {
     ctx.strokeStyle = this.color;
     ctx.moveTo(x, y);
     ctx.lineTo(x, y-1);
-    ctx.stroke();    
+    ctx.stroke();
   },
   draw: function() {
     // grid lines
@@ -46,7 +46,7 @@ let gridX = {
     ctx.strokeStyle = this.color;
     ctx.moveTo(x, y);
     ctx.lineTo(x+2, y);
-    ctx.stroke();   
+    ctx.stroke();
   },
   draw: function() {
     // grid lines

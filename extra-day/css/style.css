@@ -19,7 +19,7 @@ a { text-decoration:none }
 .back {
   width:100%;
   height:250px;
-  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/background.png?5) center repeat-x;
+  background:url(https://manzdev.github.io/codevember2017/assets/background.png?5) center repeat-x;
   position:absolute;
   bottom:0;
   display:-webkit-box;
@@ -34,7 +34,7 @@ a { text-decoration:none }
 .podium {
   width:313px;
   height:93px;
-  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/podium.png);
+  background:url(https://manzdev.github.io/codevember2017/assets/podium.png);
   position:absolute;
   bottom:15px;
 }
@@ -46,11 +46,11 @@ a { text-decoration:none }
   border-radius:50%;
   position:absolute;
   bottom:100px;
-  
+
   -webkit-animation:movefish 5s linear 1 forwards,
              enlarge .25s linear 6 alternate forwards 6s,
             movefish2 5s linear 1 10s forwards;
-  
+
           animation:movefish 5s linear 1 forwards,
              enlarge .25s linear 6 alternate forwards 6s,
             movefish2 5s linear 1 10s forwards;
@@ -59,8 +59,8 @@ a { text-decoration:none }
 .fish {
   width:186px;
   height:190px;
-  background:url(https://raw.githubusercontent.com/ManzDev/codevember2017/master/assets/fish.png?5);
-  
+  background:url(https://manzdev.github.io/codevember2017/assets/fish.png);
+
   position:absolute;
   bottom:250px;
 /*   top:50px; */
@@ -107,7 +107,7 @@ a { text-decoration:none }
 .cup {
   width:33px;
   height:51px;
-  background:url(https://raw.githubusercontent.com/ManzDev/codevember2017/master/assets/cup.png) no-repeat;
+  background:url(https://manzdev.github.io/codevember2017/assets/cup.png) no-repeat;
   position:absolute;
   left: calc(50vw - 30px);
   opacity:0;
@@ -144,24 +144,24 @@ a { text-decoration:none }
   height:128px;
   position:relative;
   bottom:-35px;
-  background:url(https://raw.githubusercontent.com/ManzDev/codevember2017/master/assets/chars.png);
+  background:url(https://manzdev.github.io/codevember2017/assets/chars.png);
   background-size:256px 512px;
   z-index:15;
 }
 
 .codepen {
-  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/codepen-guy.png?2);
+  background:url(https://manzdev.github.io/codevember2017/assets/codepen-guy.png);
   background-size:128px 256px;
   width:128px;
   height:128px;
   position: relative;
   top: 50px;
-  left: 14px;  
+  left: 14px;
 }
 
-.codepen { 
-  -webkit-animation: movecp .5s steps(2) 10s infinite; 
-          animation: movecp .5s steps(2) 10s infinite 
+.codepen {
+  -webkit-animation: movecp .5s steps(2) 10s infinite;
+          animation: movecp .5s steps(2) 10s infinite
 }
 
 @-webkit-keyframes movecp {
@@ -174,17 +174,17 @@ a { text-decoration:none }
   100% { background-position:0 256px }
 }
 
-.zebra { 
+.zebra {
   background-position: 128px 0;
   bottom:-70px;
   left:5px;
 }
-.rockguy { 
+.rockguy {
   background-position: 0 386px;
-  left:-10px;  
+  left:-10px;
 }
 
-.emoji { 
+.emoji {
   width:128px;
   height:128px;
   position:relative;

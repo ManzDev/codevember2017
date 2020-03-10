@@ -78,7 +78,7 @@ function checkBox() {
   // First time
   if (!music) {
     music = new Howl({
-      src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/tetris-a.mp3'],
+      src: ['https://manzdev.github.io/codevember2017/assets/tetris-a.mp3'],
       autoplay: false,
       loop: true
     }).play();

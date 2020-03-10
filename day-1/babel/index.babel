@@ -22,7 +22,7 @@ let deathstar = {
       ctx.shadowColor='#00960a';
       ctx.shadowOffsetX=0;
       ctx.shadowOffsetY=0;
-      ctx.shadowBlur=20;      
+      ctx.shadowBlur=20;
       ctx.moveTo(deathstar.x + 85, deathstar.y + 75);
       ctx.lineTo(0, deathstar.y + 75);
       ctx.stroke();
@@ -30,7 +30,7 @@ let deathstar = {
     }
   }
 }
-deathstar.image.src = 'https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/death-star-256x256.png';
+deathstar.image.src = 'https://manzdev.github.io/codevember2017/assets/death-star-256x256.png';
 
 // Fix resize canvas
 window.onresize = function() {
@@ -40,7 +40,7 @@ window.onresize = function() {
 
 function clearScreen() {
   ctx.fillStyle = '#000';
-  ctx.fillRect(0, 0, canvas.width, canvas.height);  
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
 let stars = []
@@ -63,21 +63,21 @@ function loop() {
 
 // Update
 function update() {
-  
+
   // Stars
   for (let i=0; i < 500; i++) {
     stars[i].x -= stars[i].speed;
     if (stars[i].x < 0)
       stars[i].x = canvas.width;
   }
-  
+
   deathstar.update();
-  
+
 }
 
 // Render
 function render() {
-  
+
   clearScreen();
   for (let i=0; i < 500; i++) {
     var s = stars[i];
@@ -85,16 +85,16 @@ function render() {
     ctx.strokeStyle = ['#444', '#888', '#FFF'][stars[i].color];
     ctx.strokeRect(s.x, s.y, 1, 1);
   }
-   
+
   if (~~(Math.random() * 250) == 1)
     deathstar.laser = 15 + ~~(Math.random() * 25);
 
   // DeathStar
-  ctx.drawImage(deathstar.image, deathstar.x, deathstar.y);  
+  ctx.drawImage(deathstar.image, deathstar.x, deathstar.y);
   // laser
-  deathstar.draw();  
+  deathstar.draw();
 }
 
 loop();
-let music = new Audio('https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/imperial-8bit-by-crig.mp3');
+let music = new Audio('https://manzdev.github.io/codevember2017/assets/imperial-8bit-by-crig.mp3');
 music.play();

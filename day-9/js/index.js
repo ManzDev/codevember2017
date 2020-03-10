@@ -2,7 +2,7 @@
 
 var factory = document.querySelector('#factory');
 var music = new Howl({
-  src: ['https://rawgit.com/ManzDev/codevember2017/master/assets/wings.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/wings.mp3'],
   loop: true,
   autoplay: true
 });
@@ -15,16 +15,16 @@ function reboot() {
   document.querySelector('.fries').remove();
   var newfries = document.createElement('img');
   newfries.className = 'fries';
-  newfries.src = 'https://rawgit.com/ManzDev/codevember2017/master/assets/french-fries-empty.png';
+  newfries.src = 'https://manzdev.github.io/codevember2017/assets/french-fries-empty.png';
   factory.insertAdjacentElement('afterEnd', newfries);
   setTimeout(refill, 4900);
   setTimeout(reface, 8250);
 }
 
 function refill() {
-  document.querySelector('.fries').src = 'https://rawgit.com/ManzDev/codevember2017/master/assets/french-fries.png';
+  document.querySelector('.fries').src = 'https://manzdev.github.io/codevember2017/assets/french-fries.png';
 }
 
 function reface() {
-  document.querySelector('.fries').src = 'https://rawgit.com/ManzDev/codevember2017/master/assets/french-fries-face.png';
+  document.querySelector('.fries').src = 'https://manzdev.github.io/codevember2017/assets/french-fries-face.png';
 }

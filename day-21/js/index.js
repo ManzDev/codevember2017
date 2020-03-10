@@ -1,16 +1,16 @@
 'use strict';
 
 var music = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/eye-tiger.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/eye-tiger.mp3'],
   loop: true
 });
 
 var boxing = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/boxing.mp3']
+  src: ['https://manzdev.github.io/codevember2017/assets/boxing.mp3']
 });
 
 var intro = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/eye-tiger-intro.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/eye-tiger-intro.mp3'],
   autoplay: true,
   onend: function onend() {
     music.play();

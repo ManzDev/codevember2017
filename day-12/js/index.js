@@ -4,7 +4,7 @@ var zebra = document.querySelectorAll('.zebra.b');
 var total = zebra.length;
 
 var music = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/happier-times-by-paperlaur.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/happier-times-by-paperlaur.mp3'],
   loop: true
 }).play();
 

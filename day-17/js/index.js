@@ -5,15 +5,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 var speed = document.querySelector('.lcd');
 var key = document.querySelector('.key');
 var race = true;
-var sound = new Audio('https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/coin.mp3');
+var sound = new Audio('https://manzdev.github.io/codevember2017/assets/coin.mp3');
 
 var music2 = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/playing-power-2.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/playing-power-2.mp3'],
   loop: true
 });
 
 var music = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/playing-power.mp3?3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/playing-power.mp3?3'],
   onend: function onend() {
     if (player.turbo) music2.play();else this.play();
   }

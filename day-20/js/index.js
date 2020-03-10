@@ -5,7 +5,7 @@ var circle = document.querySelector('.circle');
 var current = 0;
 
 var music = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/shooting-stars-by-janderson-barboza.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/shooting-stars-by-janderson-barboza.mp3'],
   autoplay: true,
   loop: true
 });

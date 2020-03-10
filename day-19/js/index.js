@@ -16,7 +16,7 @@ var totalwaves = 70,
     totalfishes = 30,
     totalclouds = 10;
 var fishImg = document.createElement('img');
-fishImg.src = 'https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/fishes.png';
+fishImg.src = 'https://manzdev.github.io/codevember2017/assets/fishes.png';
 var cloudsParent = document.querySelector('.clouds');
 
 function clearScreen() {

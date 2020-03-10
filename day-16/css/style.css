@@ -23,10 +23,10 @@ html {
 
 h1, h2, .ghost {
   font-family:Montserrat;
-  font-weight:600;  
+  font-weight:600;
   margin:0;
 }
-  
+
 h1 {
   font-size:66px;
   color:#FFF;
@@ -81,7 +81,7 @@ a.ghost:hover {
 .pc {
   width:256px;
   height:256px;
-  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/computer-pixel.png) no-repeat;
+  background:url(https://manzdev.github.io/codevember2017/assets/computer-pixel.png) no-repeat;
   background-size:cover;
   position:absolute;
 }
@@ -92,7 +92,7 @@ a.ghost:hover {
 .earth {
   width:200px;
   height:200px;
-  background:#000 url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/world-map.png);
+  background:#000 url(https://manzdev.github.io/codevember2017/assets/world-map.png);
   background-size:550px;
   border-radius:50%;
   -webkit-transform:rotate(10deg) scale(1.1);
@@ -110,24 +110,24 @@ a.ghost:hover {
 
 .earth.spin {
   -webkit-animation:worldspin 10s linear infinite;
-          animation:worldspin 10s linear infinite;  
+          animation:worldspin 10s linear infinite;
 }
 
 @-webkit-keyframes worldspin {
-  0% { 
+  0% {
     background-position:0 0;
   }
-  100% { 
-    background-position: 1096px 0 
+  100% {
+    background-position: 1096px 0
   }
 }
 
 @keyframes worldspin {
-  0% { 
+  0% {
     background-position:0 0;
   }
-  100% { 
-    background-position: 1096px 0 
+  100% {
+    background-position: 1096px 0
   }
 }
 
@@ -153,15 +153,15 @@ a.ghost:hover {
 
 #internet.anim .bit {
   -webkit-animation:emit 5s linear infinite;
-          animation:emit 5s linear infinite;  
+          animation:emit 5s linear infinite;
 }
 
 .bit::after {
   content:attr(data-bit);
   font-family:'Press Start 2P';
   color:#FFF;
-  font-size:28px;  
-  -webkit-animation:floatbit 1s ease-in-out alternate infinite;  
+  font-size:28px;
+  -webkit-animation:floatbit 1s ease-in-out alternate infinite;
           animation:floatbit 1s ease-in-out alternate infinite;
   position:relative;
   left: -5px;
@@ -185,14 +185,14 @@ a.ghost:hover {
   0% { top:-65px }
   100% { top:-35px }
   0%, 100% { opacity:.25 }
-  50% { opacity:1 }  
+  50% { opacity:1 }
 }
 
 @keyframes floatbit {
   0% { top:-65px }
   100% { top:-35px }
   0%, 100% { opacity:.25 }
-  50% { opacity:1 }  
+  50% { opacity:1 }
 }
 
 .screen {
@@ -240,7 +240,7 @@ a.ghost:hover {
 }
 
 .yt, .cp, .fb, .tw {
-  background:url(https://raw.githubusercontent.com/ManzDev/codevember2017/master/assets/screens.png);
+  background:url(https://manzdev.github.io/codevember2017/assets/screens.png);
 }
 
 .cp { background-position:0 0 }

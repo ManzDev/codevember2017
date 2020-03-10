@@ -30,10 +30,10 @@ html {
 
 h1, h2, .ghost {
   font-family:Montserrat;
-  font-weight:600;  
+  font-weight:600;
   margin:0;
 }
-  
+
 h1 {
   font-weight:800;
   letter-spacing:-2px;
@@ -115,20 +115,20 @@ html::before {
 .think {
   width:128px;
   height:64px;
-  background:#FFF url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/heart-mouse.png) no-repeat center center;
-  background-size:128px 64px;  
+  background:#FFF url(https://manzdev.github.io/codevember2017/assets/heart-mouse.png) no-repeat center center;
+  background-size:128px 64px;
   padding:20px;
   border-radius:20px;
   text-align:center;
   position:absolute;
   left:-120px;
   top:-30px;
-  
+
   opacity:0;
   -webkit-animation:appears 1s ease 1 8s,
             appears 4s ease 9s reverse 1 forwards;
           animation:appears 1s ease 1 8s,
-            appears 4s ease 9s reverse 1 forwards;   
+            appears 4s ease 9s reverse 1 forwards;
 }
 
 .think::before, .think::after {
@@ -180,7 +180,7 @@ html::before {
 /*   font-size:72px; */
   width:128px;
   height:128px;
-  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/heart-mouse.png) no-repeat;
+  background:url(https://manzdev.github.io/codevember2017/assets/heart-mouse.png) no-repeat;
   background-size:256px 128px;
   opacity:0;
   -webkit-animation: appears .5s ease 1 3s forwards,
@@ -263,5 +263,5 @@ body, .faraway {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-filter:grayscale(.1);
-          filter:grayscale(.1)  
+          filter:grayscale(.1)
 }

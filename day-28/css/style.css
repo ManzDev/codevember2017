@@ -26,10 +26,10 @@
 
 h1, h2, .ghost {
   font-family:Montserrat;
-  font-weight:600;  
+  font-weight:600;
   margin:0;
 }
-  
+
 h1 {
   font-weight:800;
   letter-spacing:-2px;
@@ -181,7 +181,7 @@ html {
   height:25px;
   border-radius:3px;
   margin:0 5px;
-  background:#FFF url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/154065/profile/profile-80.jpg);
+  background:#FFF url(https://manzdev.github.io/codevember2017/assets/profile-80.png);
   background-size:cover;
 }
 
@@ -263,7 +263,7 @@ html {
 .feet, .mid::after, .mid::before, .preview::after {
   opacity:0;
   -webkit-animation:appears .025s linear 1s 1 forwards;
-          animation:appears .025s linear 1s 1 forwards;  
+          animation:appears .025s linear 1s 1 forwards;
 }
 
 .feet path {

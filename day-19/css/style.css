@@ -8,15 +8,15 @@ html {
 .data {
   position:relative;
   z-index:1;
-  text-align:center;  
+  text-align:center;
 }
 
 h1, h2, .ghost {
   font-family:Montserrat;
-  font-weight:600;  
+  font-weight:600;
   margin:0;
 }
-  
+
 h1 {
   font-family:Lobster;
   font-size:64px;
@@ -77,20 +77,20 @@ a.ghost:hover {
     top:calc(100vh - 128px);
     left:-256px;
   }
-  
+
   25%, 75% {
     top:calc(30vh - 128px);
   }
-  
+
   50% {
     top:calc(3vh);
   }
-  
+
   100% {
     top:calc(100vh - 128px);
     left:calc(100vw + 256px);
   }
-  
+
   25%, 75% { opacity: 1; box-shadow:0 0 25px RGBA(255,255,255, .75) }
   0%, 100% { opacity: 0; box-shadow:0 0 25px RGBA(255,255,255, 0) }
 }
@@ -100,20 +100,20 @@ a.ghost:hover {
     top:calc(100vh - 128px);
     left:-256px;
   }
-  
+
   25%, 75% {
     top:calc(30vh - 128px);
   }
-  
+
   50% {
     top:calc(3vh);
   }
-  
+
   100% {
     top:calc(100vh - 128px);
     left:calc(100vw + 256px);
   }
-  
+
   25%, 75% { opacity: 1; box-shadow:0 0 25px RGBA(255,255,255, .75) }
   0%, 100% { opacity: 0; box-shadow:0 0 25px RGBA(255,255,255, 0) }
 }
@@ -127,7 +127,7 @@ a.ghost:hover {
   position:absolute;
   width:256px;
   height:128px;
-  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/pixel-cloud.png);
+  background:url(https://manzdev.github.io/codevember2017/assets/pixel-cloud.png);
   -webkit-animation:cloud 120s linear infinite;
           animation:cloud 120s linear infinite;
   mix-blend-mode:soft-light;

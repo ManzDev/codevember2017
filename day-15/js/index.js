@@ -5,7 +5,7 @@ var rockguy = document.querySelector('.rockguy');
 var data = document.querySelector('.data');
 
 var music = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/du-hast-by-8-bit-universe.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/du-hast-by-8-bit-universe.mp3'],
   onplay: function onplay() {
     speakers.forEach(function (e) {
       e.classList.add('anim');
@@ -34,7 +34,7 @@ var music = new Howl({
 });
 
 var start = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/du-hast-start.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/du-hast-start.mp3'],
   onend: function onend() {
     music.play();
   }

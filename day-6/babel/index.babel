@@ -4,7 +4,7 @@ canvas.width = 175;
 canvas.height = 310;
 
 function clearScreen() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);  
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
 let music;
@@ -73,26 +73,26 @@ boxes.forEach(function(e) {
 });
 
 function checkBox() {
-  
+
   // First time
   if (!music) {
     music = new Howl({
-      src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/tetris-a.mp3'],
+      src: ['https://manzdev.github.io/codevember2017/assets/tetris-a.mp3'],
       autoplay: false,
       loop: true
     }).play();
     god.classList.add('appear');
   }
-  
+
   totalDrops = (boxes[0].checked ? 0  : 5) +
                (boxes[1].checked ? 25 : 0) +
                (boxes[2].checked ? 125 : 0) +
                (boxes[3].checked ? 170 : 0) +
                (boxes[4].checked ? 75 : 0) +
                (boxes[5].checked ? 100 : 0);
-  
+
   if (totalDrops > 400)
-    cloud.classList.add('verydark'); 
+    cloud.classList.add('verydark');
   else if (totalDrops > 250) {
     cloud.classList.add('dark');
     cloud.classList.remove('verydark');

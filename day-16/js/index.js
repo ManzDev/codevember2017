@@ -14,12 +14,12 @@ var chain = '';
 var web = [{ class: 'yt', word: 'yout' }, { class: 'cp', word: 'code' }, { class: 'tw', word: 'twit' }, { class: 'fb', word: 'face' }];
 
 var music2 = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/dischipo-2.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/dischipo-2.mp3'],
   loop: true
 });
 
 var music = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/dischipo.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/dischipo.mp3'],
   onend: function onend() {
     if (!go) this.play();else music2.play();
   }

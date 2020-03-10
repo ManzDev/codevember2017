@@ -9,13 +9,13 @@ var strength = 0;
 var firstStrength = 0;
 var currentMusic = false;
 var music = [new Howl({
-  src: ['https://raw.githubusercontent.com/ManzDev/codevember2017/master/assets/power-up-1.ogg', 'https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/power-up-1.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/power-up-1.ogg', 'https://manzdev.github.io/codevember2017/assets/power-up-1.mp3'],
   onend: checkMusic.bind()
 }), new Howl({
-  src: ['https://raw.githubusercontent.com/ManzDev/codevember2017/master/assets/power-up-2.ogg', 'https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/power-up-2.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/power-up-2.ogg', 'https://manzdev.github.io/codevember2017/assets/power-up-2.mp3'],
   onend: checkMusic.bind()
 }), new Howl({
-  src: ['https://raw.githubusercontent.com/ManzDev/codevember2017/master/assets/power-up-3.ogg', 'https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/power-up-3.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/power-up-3.ogg', 'https://manzdev.github.io/codevember2017/assets/power-up-3.mp3'],
   onend: checkMusic.bind()
 })];
 

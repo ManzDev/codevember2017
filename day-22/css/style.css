@@ -17,10 +17,10 @@ html {
 
 h1, h2, .ghost {
   font-family:Montserrat;
-  font-weight:600;  
+  font-weight:600;
   margin:0;
 }
-  
+
 h1 {
   font-weight:800;
   letter-spacing:-2px;
@@ -158,7 +158,7 @@ svg path {
   top:0px;
   width:240px;
   height:160px;
-  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/planet-express.png);
+  background:url(https://manzdev.github.io/codevember2017/assets/planet-express.png);
   background-position:0 0;
   -webkit-animation:ship .2s steps(3) infinite,
             navigate 34s linear 1 forwards,

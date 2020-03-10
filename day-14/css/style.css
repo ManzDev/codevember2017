@@ -17,10 +17,10 @@ html {
 
 h1, h2, .ghost {
   font-family:Montserrat;
-  font-weight:600;  
+  font-weight:600;
   margin:0;
 }
-  
+
 h1 {
   font-size:64px;
   color:#444;
@@ -57,9 +57,9 @@ a.ghost:hover {
   height:100vh;
   -webkit-transform:translateY(800px);
           transform:translateY(800px);
-  
+
   -webkit-animation:camera 15s ease 2s 1 forwards;
-  
+
           animation:camera 15s ease 2s 1 forwards;
 }
 
@@ -107,7 +107,7 @@ a.ghost:hover {
 .mouse {
   width:1024px;
   height:128px;
-  background:url(https://i.imgsafe.org/af/afabe83725.png);
+  background:url(https://manzdev.github.io/codevember2017/assets/mouse-sprites.png);
   background-position:0 0;
   background-size:1024px 256px;
   position:absolute;
@@ -158,19 +158,19 @@ a.ghost:hover {
 }
 
 @-webkit-keyframes movemousemirror {
-  0% { 
+  0% {
     left:calc(-1024px + 40vw);
   }
-  100% { 
+  100% {
     left:calc(-1024px)
   }
 }
 
 @keyframes movemousemirror {
-  0% { 
+  0% {
     left:calc(-1024px + 40vw);
   }
-  100% { 
+  100% {
     left:calc(-1024px)
   }
 }

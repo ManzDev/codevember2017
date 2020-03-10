@@ -15,12 +15,12 @@ let web = [{class: 'yt', word: 'yout'},
            {class: 'fb', word: 'face'}];
 
 let music2 = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/dischipo-2.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/dischipo-2.mp3'],
   loop: true
 });
 
 let music = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/dischipo.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/dischipo.mp3'],
   onend: function() {
     if (!go)
       this.play();
@@ -38,9 +38,9 @@ function changeBits() {
     for (let i = 0; i < 4; i++)
       bits[i].dataset.bit = number[i+4];
   }
-  
+
   times++;
-  
+
   if (times == 10) {
     go = true;
     clearInterval(id);
@@ -50,16 +50,16 @@ function changeBits() {
     });
     pcs[0].querySelector('.screen').classList.add(web[~~(Math.random() * 4)].class);
   }
-  
-  console.log(times);  
+
+  console.log(times);
   if ((times > 1) && ((times %2) != 0)) {
     console.log('Bits: ', chain);
     let word = String.fromCharCode(parseInt(chain, 2));
     text.textContent += word;
     chain = '';
   }
-  chain = chain + bits[0].dataset.bit + bits[1].dataset.bit + 
-                  bits[2].dataset.bit + bits[3].dataset.bit;  
+  chain = chain + bits[0].dataset.bit + bits[1].dataset.bit +
+                  bits[2].dataset.bit + bits[3].dataset.bit;
 }
 
 // Init

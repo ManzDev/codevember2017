@@ -3,7 +3,7 @@
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var music = new Howl({
-  src: ['https://rawgit.com/ManzDev/codevember2017/master/assets/maniac-mansion-by-kenneth-moller.mp3', 'https://rawgit.com/ManzDev/codevember2017/master/assets/maniac-mansion-by-kenneth-moller.ogg']
+  src: ['https://manzdev.github.io/codevember2017/assets/maniac-mansion-by-kenneth-moller.mp3', 'https://manzdev.github.io/codevember2017/assets/maniac-mansion-by-kenneth-moller.ogg']
 });
 var c = document.querySelector('#canvas');
 var ctx = c.getContext('2d');

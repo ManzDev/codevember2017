@@ -6,7 +6,7 @@ canvas.width = innerWidth * 2;
 canvas.height = innerHeight;
 
 var music = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/tron-by-mcklain.mp3?1']
+  src: ['https://manzdev.github.io/codevember2017/assets/tron-by-mcklain.mp3?1']
 }).play();
 
 var gridY = {

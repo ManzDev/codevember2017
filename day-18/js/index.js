@@ -1,12 +1,12 @@
 'use strict';
 
 var motor = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/motor.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/motor.mp3'],
   loop: true
 });
 
 var startmotor = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/start-motor.mp3?4']
+  src: ['https://manzdev.github.io/codevember2017/assets/start-motor.mp3?4']
 });
 
 setTimeout(function () {

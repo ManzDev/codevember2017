@@ -1,6 +1,6 @@
 let music = new Howl({
-  src: ['https://rawgit.com/ManzDev/codevember2017/master/assets/maniac-mansion-by-kenneth-moller.mp3',
-        'https://rawgit.com/ManzDev/codevember2017/master/assets/maniac-mansion-by-kenneth-moller.ogg']
+  src: ['https://manzdev.github.io/codevember2017/assets/maniac-mansion-by-kenneth-moller.mp3',
+        'https://manzdev.github.io/codevember2017/assets/maniac-mansion-by-kenneth-moller.ogg']
 });
 let c = document.querySelector('#canvas');
 let ctx = c.getContext('2d');
@@ -25,10 +25,10 @@ class Particle {
       this.dir = -1 * this.dir;
       this.count--;
     }
-    
+
     if (this.count < 0)
       this.update = this.enableExplode();
-    
+
     this.r = this.r + this.dir;
     let gradient = ctx.createRadialGradient(c.width/2, c.height/2, 5, c.width/2, c.height/2, this.r);
     gradient.addColorStop(0, 'RGBA(255,255,255,1)');
@@ -43,31 +43,31 @@ class Particle {
       gradient.addColorStop(0, 'RGBA(255,255,255,1)');
       gradient.addColorStop(1, 'RGBA(0,0,255, 0)');
       this.color = gradient;
-      
+
       if (this.r < 1500) {
         this.r = this.r + Math.max((0.025 * this.r), 0.025);
       }
       if (this.r > 35)
         this.r = this.r * 1.2;
-      
+
       if (this.r > 8000)
-        this.update = this.delay;      
+        this.update = this.delay;
     }
   }
-  
+
   delay() {
     ctx.fillStyle = '#FFF';
     ctx.fillRect(0, 0, c.width, c.height);
     setTimeout(function() {
-      this.update = this.switchoff;   
+      this.update = this.switchoff;
     }.bind(this), 1500);
   }
-  
+
   switchoff() {
     this.opacity = this.opacity - 0.0025;
     this.color = 'rgba(255, 255, 255, '+ this.opacity +')';
   }
-  
+
   draw() {
     ctx.beginPath();
     ctx.fillStyle = this.color;
@@ -80,7 +80,7 @@ class Stars {
 
   constructor() {
     this.stars = [];
-    this.maxStars = 500;    
+    this.maxStars = 500;
     for (let i=0; i < this.maxStars; i++) {
       // star(x, y, speed)
       this.stars.push({
@@ -91,22 +91,22 @@ class Stars {
       });
     }
   }
-  
+
   draw() {
     for (let i=0; i < this.maxStars; i++) {
       var s = this.stars[i];
       ctx.lineWidth = 1;
       ctx.strokeStyle = ['#444', '#888', '#FFF'][this.stars[i].color];
       ctx.strokeRect(s.x, s.y, 1, 1);
-    }    
+    }
   }
-  
+
   update() {
     for (let i=0; i < this.maxStars; i++) {
       this.stars[i].x -= this.stars[i].speed;
       if (this.stars[i].x < 0)
         this.stars[i].x = c.width;
-    }    
+    }
   }
 }
 
@@ -120,7 +120,7 @@ function clearScreen() {
 }
 
 function update() {
-  stars.update();  
+  stars.update();
   particle.update();
 }
 

@@ -3,24 +3,24 @@ let rockguy = document.querySelector('.rockguy');
 let data = document.querySelector('.data');
 
 let music = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/du-hast-by-8-bit-universe.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/du-hast-by-8-bit-universe.mp3'],
   onplay: function() {
     speakers.forEach(function(e) {
       e.classList.add('anim');
       data.classList.add('anim');
       rockguy.classList.add('head');
-      setTimeout(function() { 
+      setTimeout(function() {
         e.classList.remove(this);
         rockguy.classList.remove('head');
         rockguy.classList.add('anim');
-        data.classList.remove('anim');        
+        data.classList.remove('anim');
       }.bind('anim'), 13000);
-      setTimeout(function() { 
+      setTimeout(function() {
         e.classList.add(this);
         data.classList.add('anim');
         rockguy.classList.add('head');
       }.bind('anim'), 29000);
-      setTimeout(function() { 
+      setTimeout(function() {
         e.classList.remove(this);
         rockguy.classList.remove('anim');
         data.classList.remove('anim');
@@ -32,7 +32,7 @@ let music = new Howl({
 });
 
 let start = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/du-hast-start.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/du-hast-start.mp3'],
   onend: function() {
     music.play();
   }

@@ -33,10 +33,10 @@ body {
   text-align: center;
   text-shadow: 0 0 10px rgba(255,255,255,.75);
   line-height: 300%;
-  z-index: 25;  
+  z-index: 25;
 }
 
-.credits div { 
+.credits div {
   text-align:center;
   opacity:0;
   -webkit-animation: appears 1s ease 1 forwards;
@@ -59,10 +59,10 @@ body {
 
 h1, h2, .ghost {
   font-family:Montserrat;
-  font-weight:400;  
+  font-weight:400;
   margin:20px;
 }
-  
+
 h1 {
   font-family:'Press Start 2P';
   font-weight:600;
@@ -106,7 +106,7 @@ a.ghost:hover {
 .char {
   width:256px;
   height:256px;
-  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/chars.png);
+  background:url(https://manzdev.github.io/codevember2017/assets/chars.png);
   -webkit-filter:drop-shadow(0 0 10px #FFF);
           filter:drop-shadow(0 0 10px #FFF);
   background-position:0px 256px;

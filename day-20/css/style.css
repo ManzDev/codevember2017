@@ -8,15 +8,15 @@ html {
 .data {
   position:relative;
   z-index:1;
-  text-align:center;  
+  text-align:center;
 }
 
 h1, h2, .ghost {
   font-family:Montserrat;
-  font-weight:600;  
+  font-weight:600;
   margin:0;
 }
-  
+
 h1 {
   font-weight:800;
   font-size:68px;
@@ -111,7 +111,7 @@ a.ghost:hover {
 .user {
   width:256px;
   height:256px;
-  background:url(https://raw.githubusercontent.com/ManzDev/codevember2017/master/assets/chars.png);
+  background:url(https://manzdev.github.io/codevember2017/assets/chars.png);
   -webkit-animation:beat .5s linear infinite alternate;
           animation:beat .5s linear infinite alternate;
   position:relative;
@@ -131,11 +131,11 @@ a.ghost:hover {
   position:absolute;
   width:256px;
   height:256px;
-  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/sunglasses.png) no-repeat;
+  background:url(https://manzdev.github.io/codevember2017/assets/sunglasses.png) no-repeat;
   -webkit-transform-origin:50% 30%;
           transform-origin:50% 30%;
   -webkit-animation:beat .5s ease alternate infinite;
-          animation:beat .5s ease alternate infinite; 
+          animation:beat .5s ease alternate infinite;
 }
 
 .zebra .sunglasses { top:45px; left:48px }

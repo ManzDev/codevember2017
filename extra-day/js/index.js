@@ -1,14 +1,14 @@
 'use strict';
 
 var win = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/winning.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/winning.mp3'],
   volume: 0.4,
   autoplay: true
 });
 
-var fish = new Audio('https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/fish.mp3');
-var drop = new Audio('https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/drop-cup.mp3');
-var finish = new Audio('https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/finish.mp3');
+var fish = new Audio('https://manzdev.github.io/codevember2017/assets/fish.mp3');
+var drop = new Audio('https://manzdev.github.io/codevember2017/assets/drop-cup.mp3');
+var finish = new Audio('https://manzdev.github.io/codevember2017/assets/finish.mp3');
 
 function fishSwim() {
   fish.currentTime = 0;

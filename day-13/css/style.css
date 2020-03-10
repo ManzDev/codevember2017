@@ -8,15 +8,15 @@ html {
 .data {
   position:relative;
   z-index:10;
-  text-align:center;  
+  text-align:center;
 }
 
 h1, h2, .ghost {
   font-family:Montserrat;
-  font-weight:600;  
+  font-weight:600;
   margin:0;
 }
-  
+
 h1 {
   font-size:64px;
   color:#FFF;
@@ -38,7 +38,7 @@ h2 {
   padding:8px;
   border:1px solid #CCC;
   text-decoration:none;
-  background: RGBA(0,0,0, .5);  
+  background: RGBA(0,0,0, .5);
 }
 
 a.ghost:hover {
@@ -67,7 +67,7 @@ a.ghost:hover {
             move 5s linear infinite alternate;
           animation:spin 2.5s linear infinite,
             move 5s linear infinite alternate;
-  
+
   position:absolute;
   bottom:100px;
   left:calc(50% - 165px);
@@ -100,22 +100,22 @@ a.ghost:hover {
 
 .orange.outside {
   z-index:5;
-  border-radius:50%;  
-  background:-webkit-radial-gradient(orange, #ee5200);  
+  border-radius:50%;
+  background:-webkit-radial-gradient(orange, #ee5200);
   background:radial-gradient(orange, #ee5200);
   -webkit-animation:spin 2.5s linear infinite,
             move 5s linear infinite alternate-reverse;
           animation:spin 2.5s linear infinite,
-            move 5s linear infinite alternate-reverse;  
+            move 5s linear infinite alternate-reverse;
 }
 
 .crowd {
   width:100%;
   height:100%;
-  background:url(https://raw.githubusercontent.com/ManzDev/codevember2017/master/assets/concert.jpg) no-repeat bottom;
+  background:url(https://manzdev.github.io/codevember2017/assets/concert.jpg) no-repeat bottom;
   background-size:1500px 950px;
-  box-shadow: 250px 0 30px #000 inset, -250px 0 30px #000 inset;  
-  -webkit-animation:appears 6s ease-in-out 1 6s forwards;  
+  box-shadow: 250px 0 30px #000 inset, -250px 0 30px #000 inset;
+  -webkit-animation:appears 6s ease-in-out 1 6s forwards;
           animation:appears 6s ease-in-out 1 6s forwards;
   opacity:0;
   position:absolute;

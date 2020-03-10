@@ -1,15 +1,15 @@
 let speed = document.querySelector('.lcd');
 let key = document.querySelector('.key');
 let race = true;
-let sound = new Audio('https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/coin.mp3');
+let sound = new Audio('https://manzdev.github.io/codevember2017/assets/coin.mp3');
 
 let music2 = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/playing-power-2.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/playing-power-2.mp3'],
   loop: true
 })
 
 let music = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/playing-power.mp3?3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/playing-power.mp3?3'],
   onend: function() {
     if (player.turbo)
       music2.play();
@@ -27,60 +27,60 @@ class Snail {
     this.lastSpeed = 0;
     this.turbo = false;
   }
-  
+
   start() {
     this.element.classList.add('run');
   }
-  
+
   update() {
-    
+
     if (this.tired == 1) {
-      
+
       this.stop();
       this.timer = setTimeout(function() {
         this.start();
         this.tired = 0;
       }.bind(this), 500 + ~~(Math.random() * 1500));
-      
+
     } else {
       this.tired = ~~(Math.random() * 50);
-      
+
       // inc;
       this.x += this.inc();
       this.element.style.left = this.x + 'px';
     }
-    
+
     if (this.x > 750)
       this.finish();
   }
-  
+
   inc() {
     this.lastSpeed = ~~(Math.random() * this.max);
     return this.lastSpeed;
   }
-  
+
   finish() {
     this.element.classList.add('winner');
     if (this.timer)
       clearTimeout(this.timer);
     race = false;
-    
+
     let div = document.createElement('div');
     div.className = 'turnoff';
     document.body.appendChild(div);
   }
-  
+
   stop() {
     this.element.classList.remove('run');
   }
-  
+
   updateSpeed() {
     if (this.tired == 1)
       speed.textContent = 0;
     else
       speed.textContent = this.max;
   }
-  
+
   enableTurbo() {
     sound.play();
     key.classList.add('off');
@@ -121,7 +121,7 @@ function loop() {
     player.update();
     player.updateSpeed();
     cpu.update();
-  }    
+  }
 }
 
 loop();

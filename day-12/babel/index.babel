@@ -2,12 +2,12 @@ let zebra = document.querySelectorAll('.zebra.b');
 let total = zebra.length;
 
 let music = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/happier-times-by-paperlaur.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/happier-times-by-paperlaur.mp3'],
   loop: true
 }).play();
 
 function update() {
-  
+
   if (~~(Math.random() * 2) == 0) {
     let i = ~~(Math.random() * total);
     zebra[i].classList.add('press');
@@ -15,7 +15,7 @@ function update() {
       zebra[this].classList.remove('press');
     }.bind(i), ~~(Math.random() * 3) * 1000);
   }
-  
+
 }
 
 (function loop() {

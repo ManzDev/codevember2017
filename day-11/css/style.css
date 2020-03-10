@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'Tron';
-  src: url('https://rawgit.com/ManzDev/codevember2017/master/assets/tron.woff'),
-       url('https://rawgit.com/ManzDev/codevember2017/master/assets/tron.ttf');
+  src: url('https://manzdev.github.io/codevember2017/assets/tron.woff'),
+       url('https://manzdev.github.io/codevember2017/assets/tron.ttf');
 }
 
 html {
@@ -17,15 +17,15 @@ html {
   text-align:center;
   opacity:0;
   -webkit-animation:appears 5s ease-in-out 15s forwards;
-          animation:appears 5s ease-in-out 15s forwards;  
+          animation:appears 5s ease-in-out 15s forwards;
 }
 
 h1, h2, .ghost {
   font-family:Montserrat;
-  font-weight:600;  
+  font-weight:600;
   margin:0;
 }
-  
+
 h1 {
   font-size:64px;
   color:#444;
@@ -68,10 +68,10 @@ a.ghost:hover {
   -webkit-perspective:500px;
           perspective:500px;
   background:-webkit-linear-gradient(top, transparent, #001616);
-  background:linear-gradient(to bottom, transparent, #001616); 
+  background:linear-gradient(to bottom, transparent, #001616);
   position:absolute;
   top:0;
-  left:-50%;  
+  left:-50%;
 }
 
 #canvas {
@@ -128,7 +128,7 @@ a.ghost:hover {
 #logo {
   text-align:center;
   font-family:Tron;
-  font-size:72px;  
+  font-size:72px;
   color:#FFF;
   -webkit-filter:drop-shadow(0 0 5px #16abaf);
           filter:drop-shadow(0 0 5px #16abaf);
@@ -147,7 +147,7 @@ a.ghost:hover {
 .cyclotron {
   width:5500px;
   height:120px;
-  border-top-right-radius: 120px 60px;  
+  border-top-right-radius: 120px 60px;
   position:absolute;
   bottom:100px;
   left:-5500px;

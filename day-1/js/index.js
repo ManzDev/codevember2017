@@ -32,7 +32,7 @@ var deathstar = {
     }
   }
 };
-deathstar.image.src = 'https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/death-star-256x256.png';
+deathstar.image.src = 'https://manzdev.github.io/codevember2017/assets/death-star-256x256.png';
 
 // Fix resize canvas
 window.onresize = function () {
@@ -95,5 +95,5 @@ function render() {
 }
 
 loop();
-var music = new Audio('https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/imperial-8bit-by-crig.mp3');
+var music = new Audio('https://manzdev.github.io/codevember2017/assets/imperial-8bit-by-crig.mp3');
 music.play();

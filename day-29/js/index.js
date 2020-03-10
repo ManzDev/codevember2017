@@ -4,7 +4,7 @@ var place = document.querySelector('.place');
 var cloud = document.querySelector('#cloud');
 var sky = document.querySelector('.sky');
 var music = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/polarity-by-kubbi.mp3', 'https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/polarity-by-kubbi.ogg'],
+  src: ['https://manzdev.github.io/codevember2017/assets/polarity-by-kubbi.mp3', 'https://manzdev.github.io/codevember2017/assets/polarity-by-kubbi.ogg'],
   loop: true,
   autoplay: true
 });

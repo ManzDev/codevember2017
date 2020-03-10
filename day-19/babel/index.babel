@@ -10,7 +10,7 @@ let totalwaves = 70,
     totalfishes = 30,
     totalclouds = 10;
 let fishImg = document.createElement('img');
-fishImg.src = 'https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/fishes.png';
+fishImg.src = 'https://manzdev.github.io/codevember2017/assets/fishes.png';
 let cloudsParent = document.querySelector('.clouds');
 
 function clearScreen() {
@@ -20,7 +20,7 @@ function clearScreen() {
 function drawSea() {
   ctx.globalAlpha = 0.65;
   ctx.fillStyle = '#254a6b';
-  ctx.fillRect(0, horizont, canvas.width, canvas.height);  
+  ctx.fillRect(0, horizont, canvas.width, canvas.height);
   ctx.globalAlpha = 1.0;
 }
 
@@ -37,15 +37,15 @@ class Wave {
     this.color = ['#4591a8','#5ba4ba','#316b7c'][rnd(0,3)];
     this.speed = 10;
   }
-  
+
   update() {
     if (this.speed > 0) {
       this.speed--;
       return;
     }
-    else 
+    else
       this.speed = 10;
-    
+
     if (this.small) {
       this.x -= 2;
       this.size += 4;
@@ -57,7 +57,7 @@ class Wave {
       this.small = true;
     }
   }
-  
+
   draw() {
     ctx.beginPath();
     ctx.strokeStyle = this.color;
@@ -74,31 +74,31 @@ class Cloud {
     this.x = rnd(-256, canvas.width);
     this.y = rnd(0, 64);
     this.rate = 3;
-    
+
     // element
     this.cloud = document.createElement('div');
     this.cloud.className = 'cloud type' + this.type;
     cloudsParent.appendChild(this.cloud);
   }
-  
+
   generate() {
     this.x = rnd(-512, -256);
     this.y = rnd(0, 64);
   }
-  
+
   update() {
     if (this.rate > 0) {
       this.rate--;
       return;
     } else
       this.rate = 3;
-    
+
     this.x += 1;
-    
+
     if (this.x > canvas.width + 256)
       this.generate();
   }
-  
+
   draw() {
     this.cloud.style.left = this.x + 'px';
     this.cloud.style.top = this.y + 'px';
@@ -111,24 +111,24 @@ class Fish {
     this.size = 128;
     this.generate();
   }
-  
+
   generate() {
     this.x = -512 + rnd(0, 512);
     this.y = rnd(horizont, canvas.height - 128);
   }
-  
+
   update() {
     if (this.y > horizont+5)
       this.y += rnd(-1, 2);
     else
       this.y += rnd(0, 2);
-    
+
     this.x += rnd(0, 3);
-    
+
     if (this.x > canvas.width + 256)
       this.generate();
   }
-  
+
   draw() {
     ctx.drawImage(fishImg, 128, 128 * this.type, 128, 128, this.x, this.y, 64, 64);
   }
@@ -160,33 +160,33 @@ fishs[totalfishes - 1].x = -640;
 
 // Loop
 function update() {
-  
+
   for (let i = 0; i < totalwaves; i++)
     waves[i].update();
-  
+
   for (let i = 0; i < totalfishes; i++)
     fishs[i].update();
 
   for (let i = 0; i < totalclouds; i++)
     clouds[i].update();
-  
+
 }
 
 function draw() {
 
   clearScreen();
-  
+
   for (let i = 0; i < totalfishes; i++)
     fishs[i].draw();
-  
-  for (let i = 0; i < totalwaves; i++) 
+
+  for (let i = 0; i < totalwaves; i++)
     waves[i].draw();
-  
+
   for (let i = 0; i < totalclouds; i++)
-    clouds[i].draw();  
-  
-  drawSea();  
-  
+    clouds[i].draw();
+
+  drawSea();
+
 }
 
 function loop() {

@@ -1,14 +1,14 @@
 let music = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/eye-tiger.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/eye-tiger.mp3'],
   loop: true
 })
 
 let boxing = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/boxing.mp3']
+  src: ['https://manzdev.github.io/codevember2017/assets/boxing.mp3']
 })
 
 let intro = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/eye-tiger-intro.mp3'],
+  src: ['https://manzdev.github.io/codevember2017/assets/eye-tiger-intro.mp3'],
   autoplay: true,
   onend: function() {
     music.play();
@@ -41,35 +41,35 @@ for (let i = 0; i < 200; i++) {
 }
 
 function update(player) {
-  
+
   //console.log('Updating...');
   let r = ~~(Math.random() * 25);
-  
+
   if ((r % 2) == 0) {
     player.classList.toggle('move');
   }
-  
+
   if (r == 1) {
     player.classList.add('block');
     setTimeout(function() {
       player.classList.remove('block');
     }, 2000);
   }
-  
+
   if (r == 2) {
     player.classList.add('strong');
     setTimeout(function() {
       player.classList.remove('strong');
     }, 1000);
   }
-  
+
   if (r == 3) {
     player.classList.add('punch');
     setTimeout(function() {
       player.classList.remove('punch');
     }, 1000);
   }
-  
+
 }
 
 

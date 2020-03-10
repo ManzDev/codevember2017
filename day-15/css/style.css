@@ -8,7 +8,7 @@ html {
 .data {
   position:relative;
   z-index:1;
-  text-align:center;  
+  text-align:center;
 }
 
 h1, h2, .ghost {
@@ -17,13 +17,13 @@ h1, h2, .ghost {
   letter-spacing:-1px;
   margin:0;
 }
-  
+
 h1 {
   font-size:64px;
   color:#1b1b1b;
   font-weight: 800;
   letter-spacing: -2px;
-  margin: -12px;  
+  margin: -12px;
 }
 
 h2 {
@@ -70,27 +70,27 @@ a.ghost:hover {
 .data.anim,
 .speaker.anim {
   -webkit-animation:movebeat .5s linear alternate infinite;
-          animation:movebeat .5s linear alternate infinite;  
+          animation:movebeat .5s linear alternate infinite;
 }
 
 .speaker.anim .tweet,
 .speaker.anim .low {
   -webkit-animation:lightbeat .5s linear alternate infinite;
-          animation:lightbeat .5s linear alternate infinite;  
+          animation:lightbeat .5s linear alternate infinite;
 }
 
 .speaker .tweet {
   width:75px;
   height:75px;
   -webkit-transform-origin:70% 20%;
-          transform-origin:70% 20%;  
+          transform-origin:70% 20%;
 }
 
 .speaker .low {
   width:150px;
   height:150px;
   -webkit-transform-origin:50% 50%;
-          transform-origin:50% 50%;  
+          transform-origin:50% 50%;
 }
 
 .speaker .tweet::after,
@@ -195,13 +195,13 @@ a.ghost:hover {
 .rockguy, .guitar, .rockhand {
   width:256px;
   height:256px;
-  position:absolute;  
-}  
+  position:absolute;
+}
 
 .rockguy {
   top:150px;
   left:calc(50vw - 128px);
-  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/rockguy.png) no-repeat;
+  background:url(https://manzdev.github.io/codevember2017/assets/rockguy.png) no-repeat;
   background-position:0 0;
   z-index:2;
 }
@@ -222,13 +222,13 @@ a.ghost:hover {
 }
 
 .guitar {
-  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/guitar-pixel.png) no-repeat;
+  background:url(https://manzdev.github.io/codevember2017/assets/guitar-pixel.png) no-repeat;
   top: 30px;
   left: 22px;
 }
 
 .rockhand {
-  background:url(https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/rock-hands.png) no-repeat;
+  background:url(https://manzdev.github.io/codevember2017/assets/rock-hands.png) no-repeat;
   z-index:5;
 }
 

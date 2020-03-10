@@ -10,7 +10,7 @@ let idata = ctx.createImageData(canvas.width, canvas.height);
 let buffer32 = new Uint32Array(idata.data.buffer);
 
 let tape = new Howl({
-  src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/tape-play.mp3?1']
+  src: ['https://manzdev.github.io/codevember2017/assets/tape-play.mp3?1']
 });
 
 //let cursors = [];
@@ -35,17 +35,17 @@ let rocket = {
     this.img.style.left = this.x + 'px';
   }
 }
-  
+
 function update() {
 
   // rocket
   if (!landed)
     rocket.update();
   rocket.render();
-  
+
   // noise tv
   noise();
-  
+
 }
 
 function loop() {
@@ -62,16 +62,16 @@ function enableGuardians() {
   cassette.classList.add('on');
   tape.play();
   setTimeout(function() {
-    rocket.img.src = 'https://raw.githubusercontent.com/ManzDev/codevember2017/master/assets/rocket-raccoon-true.png?1';
+    rocket.img.src = 'https://manzdev.github.io/codevember2017/assets/rocket-raccoon-true.png';
     let music = new Howl({
-      src: ['https://cdn.rawgit.com/ManzDev/codevember2017/master/assets/hooked.mp3'],
+      src: ['https://manzdev.github.io/codevember2017/assets/hooked.mp3'],
       loop: true
-    }).play();   
+    }).play();
   }, 2000);
 }
 
 function noise() {
   let len = buffer32.length - 1;
   while(len--) buffer32[len] = Math.random() < 0.85 ? 0 : -1>>0;
-  ctx.putImageData(idata, 0, 0);  
+  ctx.putImageData(idata, 0, 0);
 }
