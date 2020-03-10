@@ -1,4 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,800');
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_c5H3gnD-w.ttf) format('truetype');
+}
 .data {
   position: absolute;
   top: 0;
@@ -8,8 +25,7 @@
   width: 400px;
   margin: auto;
   padding: 20px;
-  -webkit-animation: appears 1s linear 56s 1 reverse forwards;
-          animation: appears 1s linear 56s 1 reverse forwards;
+  animation: appears 1s linear 56s 1 reverse forwards;
 }
 h1,
 h2,
@@ -59,8 +75,8 @@ h2 {
   text-decoration: none;
 }
 a.ghost:hover {
-  -webkit-transition: all .5s linear;
-  transition: all .5s linear;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
   background: rgba(50, 50, 50, 0.2);
   border-color: #f2ea00;
   color: #f2ea00;
@@ -85,20 +101,19 @@ body {
 .turret .izq {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .turret .der circle,
 .turret .izq circle,
 .turret .der rect,
 .turret .izq rect {
-  stroke-width: .5px;
+  stroke-width: 0.5px;
   stroke: #6f6f6f;
   stroke-linecap: square;
 }
 .turret.soprano {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   width: 260px;
 }
 .eye .pupile {
@@ -161,10 +176,8 @@ body {
   position: relative;
   top: -125px;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
           align-items: center;
   width: 400px;
   height: 500px;
@@ -220,10 +233,8 @@ body {
   bottom: 0;
   width: 100vw;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
           justify-content: center;
 }
 .first.line {
@@ -232,8 +243,7 @@ body {
 .second.line {
   -webkit-transform: scale(0.75);
           transform: scale(0.75);
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   z-index: 5;
   -webkit-filter: brightness(0.9);
           filter: brightness(0.9);
@@ -242,7 +252,6 @@ body {
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 1;
   -webkit-filter: brightness(0.8);
@@ -252,7 +261,7 @@ body {
   position: absolute;
   width: 100vw;
   height: 125px;
-  background: -webkit-linear-gradient(bottom, #999, #666);
+  background: -webkit-gradient(linear, left bottom, left top, from(#999), to(#666));
   background: linear-gradient(to top, #999, #666);
   bottom: 0;
   z-index: -1;
@@ -299,8 +308,8 @@ body {
   height: 100vh;
   display: block;
   margin: auto;
-  -webkit-animation: appears 2s linear reverse 1 88s forwards;
-          animation: appears 2s linear reverse 1 88s forwards;
+  z-index: -1;
+  animation: appears 2s linear reverse 1 88s forwards;
 }
 .door::before {
   content: " ";
@@ -311,6 +320,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 1;
 }
 @-webkit-keyframes opendoor {
   0% {
@@ -329,15 +339,15 @@ body {
   }
 }
 .door::before {
-  -webkit-animation: opendoor .75s linear 83s 1 forwards;
-          animation: opendoor .75s linear 83s 1 forwards;
+  -webkit-animation: opendoor 0.75s linear 83.5s 1 forwards;
+          animation: opendoor 0.75s linear 83.5s 1 forwards;
 }
 .door {
   height: 100vh;
 }
 .first.plant {
   height: 200vh;
-  background: -webkit-linear-gradient(bottom, transparent, #444);
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#444));
   background: linear-gradient(to top, transparent, #444);
 }
 .total {
@@ -396,8 +406,7 @@ body {
   height: 100%;
   background: #111;
   opacity: 1;
-  -webkit-animation: appears 2s linear 55s 1 reverse forwards;
-          animation: appears 2s linear 55s 1 reverse forwards;
+  animation: appears 2s linear 55s 1 reverse forwards;
 }
 @-webkit-keyframes appears {
   0% {
@@ -418,15 +427,12 @@ body {
 .upside {
   height: 400vh;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background: -webkit-linear-gradient(bottom, #000, #333, transparent);
+  justify-content: space-around;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000), color-stop(#333), to(transparent));
   background: linear-gradient(to top, #000, #333, transparent);
 }
 .light {
